@@ -20,20 +20,19 @@ const Pagesix = () => {
 							type="email"
 							name="email"
 							placeholder="Email"
-							className="pageSix__form-group"
 						/>
-						<button type="submit" className="pageSix__form-group">
+						<button type="submit">
 							Subscribe
 						</button>
 					</form>
 
 					<div className="pageSix-content__app-market">
-						<a href="@#">
+						<span>
 							<img src={AppleStore} alt="" />
-						</a>
-						<a href="@#">
+						</span>
+						<span>
 							<img src={GoogleStore} alt="" />
-						</a>
+						</span>
 					</div>
 				</div>
 			</div>

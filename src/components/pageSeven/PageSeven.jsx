@@ -12,7 +12,7 @@ import Asset10 from "../../images/asset10.png";
 const PageSeven = () => {
 	return (
 		<div className="pageSeven">
-			<h3 className="pageSeven__header">From Our Blogs <hr /></h3>
+			<h3 className="pageSeven__header">From Our Blogs</h3>
 			<div className="pageSeven__first-item">
 				<div className="pageSeven__first-item__content">
 					<div className="first-item__content-img">
@@ -22,7 +22,7 @@ const PageSeven = () => {
 					<div className="first-item__content-heading">Get Ready with Rebecca</div>
 					<div className="first-item__content-body">
 						Get nourished with the best of citrus blend specially mixed by Rebecca
-						with your wellbeing in every sip. Also for your outdoor summer party citru
+						with your wellbeing in every sip. Also for your outdoor summer party citrus
 						goodness in all ways.
 					</div>
 				</div>
@@ -50,7 +50,7 @@ const PageSeven = () => {
 					</div>
 					<div className="first-item__content-body">
 						Unwind and party like for every weekend, feel and taste the goodness with
-						every sip and be vitalized. Clear the mind energize the body. feel it
+						every sip and be vitalized. Clear the mind, energize the body, feel it,
 						tatse it.
 					</div>
 				</div>

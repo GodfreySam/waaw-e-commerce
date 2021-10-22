@@ -77,7 +77,7 @@ body {
     
 }
 
-.product__image :hover {
+.product__image:hover {
     transform: scale(1.5);
 }
 
