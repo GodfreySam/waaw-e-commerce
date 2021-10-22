@@ -1,6 +1,7 @@
 .header1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     position: fixed;
     top: 0em;
@@ -8,6 +9,11 @@
     color: whitesmoke;
     font-size: 1em;
     background-color: #fabcbf;
+}
+.header__left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .header1__right{
     display: flex;
@@ -30,6 +36,11 @@
     align-items: center;
 }
 
+@media (max-width: 1239px) {
+    .header1__right{
+        width: 100%;
+    }
+}
 
 .header2{
     display: flex;
