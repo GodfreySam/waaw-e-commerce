@@ -1,3 +1,6 @@
+.arrivals{
+    /* border: 2px solid brown; */
+}
 .arrivals__header{
     display: flex;
     justify-content: center;

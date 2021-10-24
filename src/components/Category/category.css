@@ -1,3 +1,6 @@
+.categories{
+    /* border: 2px solid red; */
+}
 .categories__header{
     display: flex;
     justify-content: center;
@@ -16,6 +19,7 @@
 }
 .categories__body{
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 
 .category{
@@ -27,6 +31,7 @@
     box-shadow: none;
     transition: background-color 1s;
     transition: box-shadow .5s;
+    /* border: 10px forestgreen; */
 }
 .category:hover{
     cursor: pointer;
@@ -78,7 +83,8 @@
     margin: 3em;
 }
 .button{
-    width: 50px !important; 
+    width: 50px !important;
+    z-index: -1;
     height: 50px !important; 
     border-radius: 50% !important;
     background-color: #5d5d5d !important;

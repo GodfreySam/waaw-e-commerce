@@ -4,8 +4,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto;
-
-	max-width: 1300px;
+	margin: 5rem auto 0;
+	/* max-width: 1300px; */
+	width: 100vw;
 }
 
 .pageSix-content {
