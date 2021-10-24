@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    position: absolute;
+    width: 100vw;
+    position: fixed;
     top: 0em;
     padding: .65em 3.2em .65em 4.2em;
     color: whitesmoke;
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2em;
+    /* margin-right: 2em; */
 }
 .header1__right--icon{
     margin-right: .3em;
@@ -46,13 +46,15 @@
 .header2{
     display: flex;
     top: 2.6em;
-    width: 100%;
+    left: 0;
+    width: 100vw;
+    /* width: 100vw; */
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid rebeccapurple; */
+    border: 1px solid rebeccapurple;
     color: whitesmoke;
     padding: 0 3.2em 0 4.2em;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     background-color: rgb(17, 17, 17);
 }
@@ -66,7 +68,7 @@
 .header2__left > h1{
     font-style: italic;
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 3em;
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
     cursor: pointer;

@@ -22,8 +22,8 @@ const PageSeven = () => {
 					<div className="first-item__content-heading">Get Ready with Rebecca</div>
 					<div className="first-item__content-body">
 						Get nourished with the best of citrus blend specially mixed by Rebecca
-						with your wellbeing in every sip. Also for your outdoor summer party citrus
-						goodness in all ways.
+						with your wellbeing in every sip. Also for your outdoor summer party
+						citrus goodness in all ways.
 					</div>
 				</div>
 				<div className="pageSeven__first-item__content">

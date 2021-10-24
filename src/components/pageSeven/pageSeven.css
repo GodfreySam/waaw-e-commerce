@@ -1,7 +1,5 @@
 .pageSeven {
 	font-family: "Poppins", sans-serif;
-	margin: 0 auto 0;
-	width: 100vw;
 }
 
 .pageSeven__header {
@@ -11,7 +9,6 @@
 	line-height: 0.1rem;
 	margin-top: 2rem;
 	margin-bottom: 4rem;
-	/* max-width: 350px; */
 }
 
 .pageSeven__header::after {
@@ -25,13 +22,19 @@
 
 .pageSeven__first-item {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	/* padding: 0 10rem; */
+	padding: 0 2rem;
 }
 
 .pageSeven__first-item > * {
-	flex: 1 1 160px;
-	margin: 5px;
+	flex: 0 0 200px;
+	margin: 10px;
+}
+
+.first-item__content-img img {
+	max-width: 320px;
+	height: auto;
 }
 
 .first-item__content-date {
@@ -48,20 +51,21 @@
 .first-item__content-body {
 	text-align: justify;
 	word-wrap: break-word;
-	max-width: 300px;
-	font-size: smaller;
+	max-width: 350px;
 }
 
 .pageSeven__second-item {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	/* padding: 0 10rem; */
-	/* padding: 2rem; */
+	margin: 10px;
 }
+
 .pageSeven__second-item > * {
-	flex: 1 100px;
-	margin: 15px;
+	flex: 0 0 200px;
+	margin: 10px;
 }
 
-
-@media screen and (max-width: 900px) { }
+.second-item__content-img img {
+	max-width: 250px;
+}

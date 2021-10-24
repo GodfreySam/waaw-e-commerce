@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 * {
    box-sizing: border-box;
@@ -10,4 +11,7 @@
    font-family: "Poppins", sans-serif;
 }
 
-
+.body{
+   width: 100%;
+   border: 3px solid brown;
+}

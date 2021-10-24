@@ -5,21 +5,18 @@ import Asset13 from "../../images/asset13.png";
 import Asset14 from "../../images/asset14.png";
 import Asset15 from "../../images/asset15.png";
 import Asset16 from "../../images/asset16.png";
-import Visa from "../../images/visa.png"
-import Mastercard from "../../images/master-card.png"
-import Unionpay from "../../images/union-pay.png"
-import Discover from "../../images/discover.png"
-import Giro from "../../images/giro-pay.png"
+import Visa from "../../images/visa.png";
+import Mastercard from "../../images/master-card.png";
+import Unionpay from "../../images/union-pay.png";
+import Discover from "../../images/discover.png";
+import Giro from "../../images/giro-pay.png";
 import Amex from "../../images/amex.png";
-
 import * as FaIcons from "react-icons/fa";
 import * as FiIcons from "react-icons/fi";
 import * as MdIcons from "react-icons/md";
 import * as HiIcons from "react-icons/hi";
 import * as GrIcons from "react-icons/gr";
-
-import './footer.css';
-
+import "./footer.css";
 const Footer = () => {
 	return (
 		<div className="footer">
@@ -51,20 +48,20 @@ const Footer = () => {
 					<li className="footer__second-item_item-header contact-header">
 						Contact us
 					</li>
-					<li className="footer__second-item_item-list">
-						<MdIcons.MdOutlineLocationOn />
-						<span className="item-list">
-							<span>Address:2168 S Archer Ave, Chicago,</span>
+					<li className="footer__second-item_item-list footer-address-list">
+						<MdIcons.MdOutlineLocationOn className="footer-icon" />
+						<span className="item-list address">
+							<span className="address1">Address: 2168 S Archer Ave, Chicago,</span>
 							<br />
-							<span className="address">United State</span>
+							<span className="address2">United State</span>
 						</span>
 					</li>
-					<li className="footer__second-item_item-list">
-						<FiIcons.FiPhoneCall />
+					<li className="footer__second-item_item-list footer-address-list">
+						<FiIcons.FiPhoneCall className="footer-icon" />
 						<span className="item-list">Phone: +(01) 312-808-1999</span>
 					</li>
-					<li className="footer__second-item_item-list">
-						<HiIcons.HiOutlineMail />
+					<li className="footer__second-item_item-list footer-address-list">
+						<HiIcons.HiOutlineMail className="footer-icon" />
 						<span className="item-list">Email: support@althothemes.com</span>
 					</li>
 					<li className="footer__second-item_item-list">
@@ -115,21 +112,16 @@ const Footer = () => {
 					<li className="footer__second-item_icon">
 						<ul className="footer__second-item_item-icons">
 							<li>
-								<FaIcons.FaFacebookF />
+								<FaIcons.FaFacebookF className="footer-icon" />
 							</li>
 							<li>
-								<FaIcons.FaPinterestP />
+								<FaIcons.FaPinterestP className="footer-icon" />
 							</li>
 							<li>
-								<GrIcons.GrInstagram />
+								<GrIcons.GrInstagram className="footer-icon" />
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</div>
-			<div className="footer__third-item">
-				<ul>
-					<li>Copyright &copy; 2021.frooto</li>
 				</ul>
 			</div>
 		</div>

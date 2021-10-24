@@ -12,7 +12,7 @@ body {
 } */
 
 .product-container {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .product__nav__wrapper {
@@ -132,7 +132,7 @@ body {
 
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 860px) {
     .product__main {
       flex-direction: column;
     }
@@ -148,7 +148,7 @@ body {
     } */
 
     .product-container {
-        margin-top: auto;
+        padding-top: 0;
     }
 }
 

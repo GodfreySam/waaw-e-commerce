@@ -1,0 +1,225 @@
+.container {
+    font-family: 'Poppins';
+    max-width: 86vw;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* height: 100px; */
+    background-color: rgb(245, 245, 245);
+    border-bottom: 10px solid black;
+    background-image: url(../../images/grass.png);
+    background-position: bottom -5px left -2px;
+    background-repeat: no-repeat;
+
+}
+
+.s__name {
+    padding-bottom: 60px;
+}
+
+/* .image__container {
+    border-radius: 5px;
+    background-color: #f2cc2b;
+    border: 1px solid blue;
+    width: 150px;
+    height: 90px;
+    
+} */
+
+.first__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* margin-left: 30px; */
+}
+
+.cart__image__container {
+    padding: 0 20px;
+}
+
+.cart__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: fixed; */
+}
+
+.cart__title {
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+.cart__desc {
+    padding: 60px 0;
+    flex-wrap: wrap;
+
+}
+
+.cart__price {
+    /* padding: 120px 0; */
+    margin: 0 20px;
+}
+
+.cart__quantity {
+
+    margin-left: 10px;
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
+    width: 6%;
+    border-radius: 7px;
+    box-shadow: 5px 7px 12px #c4c4c4;
+}
+
+.cart__plus {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.cart__minus {
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    padding-top: 7px;
+}
+
+.cart__quantity__second {
+    /* border: 1px solid rgb(201, 201, 201); */
+    margin-left: 10px;
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
+    /* height: 80px; */
+    width: 6%;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 5px 7px 12px #c4c4c4;
+}
+
+.container__one {
+    flex: 1.9;
+    padding: 80px 0 0 90px;
+    /* background-color: rgb(243, 243, 243); */
+}
+
+.container__two {
+    background-color: #343434;
+    margin-left: 30px;
+    flex: 1;
+    padding: 50px 0 0 70px;
+    margin-top: 20px;
+    height: 80vh;
+    /* height: 70%; */
+}
+
+.payment__header {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.payment__gateway {
+    width: 70%;
+    /* border-radius: 30px !important; */
+    margin-bottom: 40px;
+}
+
+.payment__gateway button {
+    background-color: black; /* Green background */
+    border: 2px solid white; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+
+}
+
+.payment__gateway:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.payment__gateway button:not(:last-child) {
+    border: none; /* Prevent double borders */
+}
+
+.payment__gateway button:hover {
+    background-color: white;
+    color: black;
+}
+
+.payment__text {
+    color: white;
+    text-decoration: none;
+}
+
+.payment__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__card__details {
+    padding-right: 30px;
+    
+}
+
+.payment__card__detail {
+    width: 30%;
+}
+
+.payment__card__button {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 50px; */
+}
+
+.divider {
+    border: 1px solid black;
+}
+
+.cart__total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first__button {
+    border-radius: 30px 0 0 30px;
+    height: 50px;
+}
+
+.second__button {
+    border-radius: 0 30px 30px 0;
+    height: 50px;
+}
+
+.payment__options {
+    margin-bottom: 20px;
+}
+
+.MuiFormLabel-root,
+.MuiInputBase-input,
+.MuiInput-input {
+    color: #ffffff !important;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .container__two {
+        display: none;
+        width: 100%;
+    }
+
+    /* .first__cart {
+        flex-direction: column;
+    } */
+}

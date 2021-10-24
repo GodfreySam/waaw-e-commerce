@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid lightcoral; */
+    width: 100%;
+    border: 1px solid lightcoral;
     background-image: url('../../images/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 7.6em;
+    margin-top: 5em;
+    padding: 0;
 }
 .hero_section--content{
     display: block;
