@@ -10,7 +10,7 @@ import FlavourButtons from "../Icons/FlavourIcons";
 import Quantity from "../Quantity/Quantity";
 import Like from "../Like/Like";
 import Button from "../Buttons/Button";
-import shopItems from "../../components/assets/database/shop";
+import shopItems from "../../database/shop";
 
 
 const SingleProduct = () => {

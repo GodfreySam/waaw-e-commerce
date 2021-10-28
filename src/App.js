@@ -4,9 +4,9 @@ import MainFooter from "./components/footer/MainFooter";
 import Footer from "./components/footer/Footer";
 import Header1 from "./components/Header/Header1";
 import Header2 from "./components/Header/Header2";
-import Routes from "../src/routes/Routes";
-import data from "./components/assets/database/data";
-import shopItems from "./components/assets/database/shop";
+import Routes from "./routes/Routes";
+import data from "./database/data";
+import shopItems from "./database/shop";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
