@@ -87,6 +87,16 @@
 	height: auto;
 }
 
+.pageSix-content__app-market span img:hover {
+	cursor: pointer;
+   background-color: rgb(139, 112, 103);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pageSix-content__app-market span img:active {
+   transform: translateY(15px);
+}
+
 @media screen and (max-width: 1260px) {
 	.pageSix {
 		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/asset2a_sastln.png") !important;
@@ -392,7 +402,7 @@
 		height: auto;
 		max-width: 200px;
 	}
-	
+
 	.pageSix {
 		font-family: "Poppins", sans-serif;
 		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
@@ -407,7 +417,7 @@
 		height: auto;
 		max-width: 180px;
 	}
-	
+
 	.pageSix {
 		font-family: "Poppins", sans-serif;
 		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
