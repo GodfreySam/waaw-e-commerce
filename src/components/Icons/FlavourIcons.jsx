@@ -6,38 +6,30 @@ const FlavourButtons = () => {
     return (
         <div className="buttons__flavour">
             <li>
-                <a href='https://twitter.com'>
-                    <BsFillCircleFill style={{
-                        fontSize: '35px',
-                        color: 'yellow'
+                <BsFillCircleFill style={{
+                    fontSize: '35px',
+                    color: 'yellow'
+                }}/>
+            </li>
+
+            <li>
+                <BsFillCircleFill style={{ 
+                    fontSize: '35px',
+                    color: 'green'
                     }}/>
-                </a>
             </li>
 
             <li>
-                <a href='https://facebook.com'>
-                    <BsFillCircleFill style={{ 
-                        fontSize: '35px',
-                        color: 'green'
-                        }}/>
-                </a>
+                <BsFillCircleFill style={{ 
+                    fontSize: '35px',
+                    color: 'brown'}}/>
             </li>
 
             <li>
-                <a href='https://linkedin.com'>
-                    <BsFillCircleFill style={{ 
-                        fontSize: '35px',
-                        color: 'brown'}}/>
-                </a>
-            </li>
-
-            <li>
-                <a href='https://linkedin.com'>
-                    <BsFillCircleFill style ={{
-                        fontSize: '35px',
-                        color: 'purple'
-                    }}/>
-                </a>
+                <BsFillCircleFill style ={{
+                    fontSize: '35px',
+                    color: 'purple'
+                }}/>
             </li>
         </div>
     )

@@ -4,7 +4,7 @@ import "./singleProduct.css";
 import { Container } from "@material-ui/core";
 import { BiUser, BiSearch } from "react-icons/bi";
 import { GrCart } from "react-icons/gr";
-// import cart1 from "../../images/cart1.png";
+import cart11 from "../../images/cart11.png";
 import Ratings from "../Ratings/Ratings";
 import FlavourButtons from "../Icons/FlavourIcons";
 import Quantity from "../Quantity/Quantity";
