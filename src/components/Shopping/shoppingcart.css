@@ -8,11 +8,7 @@
     /* height: 100px; */
     background-color: rgb(245, 245, 245);
     border-bottom: 10px solid black;
-<<<<<<< HEAD
     background-image: url('https://res.cloudinary.com/freyman/image/upload/v1635417550/grp1-ecom/images/grass_rntfew.png');
-=======
-    background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417550/grp1-ecom/images/grass_rntfew.png");
->>>>>>> 80cb068cf14cfc29b61b8c50e08cc5662fc4fbda
     background-position: bottom -5px left -2px;
     background-repeat: no-repeat;
 
@@ -60,7 +56,7 @@
 }
 
 .cart__desc {
-    padding: 30px 0;
+    padding: 60px 0;
     flex-wrap: wrap;
 
 }
@@ -79,12 +75,6 @@
     width: 6%;
     border-radius: 7px;
     box-shadow: 5px 7px 12px #c4c4c4;
-}
-
-.cart__minus__plus {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
 }
 
 .cart__plus {
@@ -128,12 +118,8 @@
     flex: 1;
     padding: 50px 0 0 70px;
     margin-top: 20px;
-    height: 90vh;
+    height: 80vh;
     /* height: 70%; */
-}
-
-.image__desc {
-    display: flex;
 }
 
 .payment__header {
@@ -233,48 +219,7 @@
         width: 100%;
     }
 
-    .container {
-        max-width: 90vw;
-        width: 100%;
-    }
-
-    .container__one {
-        padding: 0px;
-        flex: 0px;
-    }
-
-    .cart__quantity__second {
-        margin-right: 5px;
-    }
-
-    .s__name {
-        padding-bottom: 30px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .first__cart {
+    /* .first__cart {
         flex-direction: column;
-    }
-
-    .cart__quantity {
-        display: flex;
-        width: 15%;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    .cart__quantity__second {
-        width: 15%;
-        height: 30px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-    }
-
-    .cart__plus, .cart__minus {
-        padding: 7px 0px;
-    }
+    } */
 }

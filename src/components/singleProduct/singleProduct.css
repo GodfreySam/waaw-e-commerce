@@ -11,6 +11,10 @@ body {
     border: 5px solid black;
 } */
 
+.singleProduct {
+    margin-top: 150px;
+}
+
 .product-container {
     padding-top: 100px;
 }
@@ -157,7 +161,3 @@ body {
         display: none;
     }
 }
-
-
-
-
