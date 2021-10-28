@@ -1,0 +1,22 @@
+
+.buttons__flavour {
+    /* height: 60px; */
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+
+
+/* a {
+    border: 2px solid #7768a5;
+    border-radius: 40%;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    
+} */
+

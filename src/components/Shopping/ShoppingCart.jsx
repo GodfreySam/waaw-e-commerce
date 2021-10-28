@@ -37,33 +37,33 @@ const ShoppingCart = () => {
             </div>
 
             <div className="first__cart">
-              <div className="cart__image__container">
-                <img src={ cart11 } alt="product" className ="cart__image" />
-              </div>
-              <div className="cart__desc">
-                <h1 className="cart__title">
-                  CHICKEN BERIDO SALAD
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Ab eum similique hic, molestiae, sequi autem temporibus <br />
-                </p>
-              </div>
+                <div className="cart__image__container">
+                  <img src={ cart11 } alt="product" className ="cart__image" />
+                </div>
+                <div className="cart__desc">
+                  <h1 className="cart__title">
+                    CHICKEN BERIDO SALAD
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Ab eum similique hic, molestiae, sequi autem temporibus <br />
+                  </p>
+                </div>
               <div className="cart__price">
                   <h3> $200.99 </h3>  
               </div>
-              <div className="cart__quantity">
-                  <button className="cart__plus"> + </button>
-                  <h3>
-                    01
-                  </h3>
-                  <button className="cart__minus"> - </button>
+                <div className="cart__quantity">
+                    <button className="cart__plus"> + </button>
+                    <h3>
+                      01
+                    </h3>
+                    <button className="cart__minus"> - </button>
 
-              </div>
-              <div className="cart__quantity__second">
-                  <CloseIcon style={{
-                    margin: '1.65rem 0'
-                  }}/>
-              </div>
+                </div>
+                <div className="cart__quantity__second">
+                    <CloseIcon style={{
+                      margin: '1.65rem 0'
+                    }}/>
+                </div>
             </div>
 
             <hr />
