@@ -4,8 +4,7 @@
    margin: auto;
 }
 .recipe__content{
-    background: url('./../../assets/bg.png');
-/*     background: url('../assets/bg.png'); */
+    background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
@@ -100,7 +99,7 @@ line-height: 1.5;
        
     }
     .recipe__content{
-        background: url('./../../assets/bg.png');
+        background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
         background-repeat: no-repeat;
         background-position: center;
         object-fit: cover;
@@ -148,7 +147,7 @@ line-height: 1.5;
        
     }
     .recipe__content{
-        background: url('./../../assets/bg.png');
+        background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
         background-repeat: no-repeat;
         background-position: center;
         object-fit: cover;

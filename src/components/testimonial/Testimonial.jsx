@@ -1,7 +1,6 @@
 import React from "react";
 import Gallery from "./Gallery";
 import "./style.css";
-import image from "./../assets/circle.jpg";
 
 const Testimonial = () => {
 	return (
@@ -25,7 +24,11 @@ const Testimonial = () => {
 							blanditiis laudantium consequuntur reiciendis corrupti illo quo error.
 							Rerum nostrum natus deleniti harum possimus alias.
 						</div>
-						<img src={image} alt="" className="testimonial__img" />
+						<img
+							src="https://res.cloudinary.com/freyman/image/upload/v1635417382/grp1-ecom/assets/circle_kdn34g.jpg"
+							alt=""
+							className="testimonial__img"
+						/>
 					</div>
 				</div>
 			</div>

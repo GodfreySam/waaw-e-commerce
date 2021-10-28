@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./Trending.css";
 import { makeStyles, Tab, Typography, Tabs } from "@material-ui/core";
 import { TabContext, TabPanel } from "@material-ui/lab";
@@ -16,6 +17,9 @@ const Trending = ({ trendingProducts }) => {
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
 	};
+
+		let history = useHistory();
+	
 	return (
 		<div>
 			<p className="trending__title">Trending Products</p>
@@ -36,17 +40,21 @@ const Trending = ({ trendingProducts }) => {
 					</Tabs>
 					<TabPanel></TabPanel>
 					<div className="products__container">
-						{trendingProducts.map((product) => (
-							<div className="products__single" key={product.id}>
+						{trendingProducts.map((trend) => (
+							<div
+								className="products__single"
+								key={trend.id}
+								onClick={() => history.push(`/product-details/${trend.id}`)}
+							>
 								<div className="products__top">
-									<img src={product.image} alt="" className="products__image" />
+									<img src={trend.image} alt={trend.name} className="products__image" />
 								</div>
 								<div className="products__bottom">
-									<p className="products__name">{product.name}</p>
+									<p className="products__name">{trend.name}</p>
 									<div className="products__pricing">
-										<p className="products__price">{product.price}</p>
+										<p className="products__price">{trend.oldPrice}</p>
 										<p className="products__discount">
-											<s>{product.price}</s>
+											<s>{trend.price}</s>
 										</p>
 									</div>
 								</div>

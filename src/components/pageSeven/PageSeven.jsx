@@ -1,13 +1,5 @@
 import React from "react";
 import "./pageSeven.css";
-import Asset3 from "../../images/asset3.png";
-import Asset4 from "../../images/asset4.png";
-import Asset5 from "../../images/asset5.png";
-import Asset6 from "../../images/asset6.png";
-import Asset7 from "../../images/asset7.png";
-import Asset8 from "../../images/asset8.png";
-import Asset9 from "../../images/asset9.png";
-import Asset10 from "../../images/asset10.png";
 
 const PageSeven = () => {
 	return (
@@ -16,7 +8,10 @@ const PageSeven = () => {
 			<div className="pageSeven__first-item">
 				<div className="pageSeven__first-item__content">
 					<div className="first-item__content-img">
-						<img src={Asset3} alt="" />
+						<img
+							src="https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset3_c8bemy.png"
+							alt=""
+						/>
 					</div>
 					<div className="first-item__content-date">On JUNE 16, 2021</div>
 					<div className="first-item__content-heading">Get Ready with Rebecca</div>
@@ -28,7 +23,10 @@ const PageSeven = () => {
 				</div>
 				<div className="pageSeven__first-item__content">
 					<div className="first-item__content-img">
-						<img src={Asset4} alt="" />
+						<img
+							src="https://res.cloudinary.com/freyman/image/upload/v1635417547/grp1-ecom/images/asset4_lobutt.png"
+							alt=""
+						/>
 					</div>
 					<div className="first-item__content-date">On JUNE 16, 2021</div>
 					<div className="first-item__content-heading">
@@ -42,7 +40,10 @@ const PageSeven = () => {
 				</div>
 				<div className="pageSeven__first-item__content">
 					<div className="first-item__content-img">
-						<img src={Asset5} alt="" />
+						<img
+							src="https://res.cloudinary.com/freyman/image/upload/v1635417547/grp1-ecom/images/asset5_wqwkuf.png"
+							alt=""
+						/>
 					</div>
 					<div className="first-item__content-date">On JUNE 16, 2021</div>
 					<div className="first-item__content-heading">
@@ -57,19 +58,34 @@ const PageSeven = () => {
 			</div>
 			<div className="pageSeven__second-item">
 				<div className="second-item__content-img">
-					<img src={Asset6} alt="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset6_ujku4d.png"
+						alt=""
+					/>
 				</div>
 				<div className="second-item__content-img">
-					<img src={Asset7} alt="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset7_lmymvx.png"
+						alt=""
+					/>
 				</div>
 				<div className="second-item__content-img">
-					<img src={Asset8} alt="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417547/grp1-ecom/images/asset8_nscsqr.png"
+						alt=""
+					/>
 				</div>
 				<div className="second-item__content-img">
-					<img src={Asset9} alt="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417547/grp1-ecom/images/asset9_u4ccfc.png"
+						alt=""
+					/>
 				</div>
 				<div className="second-item__content-img">
-					<img src={Asset10} alt="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417547/grp1-ecom/images/asset10_wn7i77.png"
+						alt=""
+					/>
 				</div>
 			</div>
 		</div>

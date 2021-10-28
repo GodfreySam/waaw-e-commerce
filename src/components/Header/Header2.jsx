@@ -18,12 +18,36 @@ const Header2 = () => {
 				</Grid>
 				<Grid className="header2__middle" item sm={7} xs={10}>
 					<ul className="header2__lists">
-						<li className="header2__list">Menu</li>
-						<li className="header2__list">Pages</li>
-						<li className="header2__list">Gallery</li>
-						<li className="header2__list">Blog</li>
-						<li className="header2__list">Shop</li>
-						<li className="header2__list">Elements</li>
+						<li className="header2__list">
+							<Link to="/products" className="link-items">
+								Menu
+							</Link>
+						</li>
+						<li className="header2__list">
+							<Link to="/" className="link-items">
+								Pages
+							</Link>
+						</li>
+						<li className="header2__list">
+							<Link to="/products" className="link-items">
+								Gallery
+							</Link>
+						</li>
+						<li className="header2__list">
+							<Link to="/" className="link-items">
+								Blog
+							</Link>
+						</li>
+						<li className="header2__list">
+							<Link to="/products" className="link-items">
+								Shop
+							</Link>
+						</li>
+						<li className="header2__list">
+							<Link to="/products" className="link-items">
+								Elements
+							</Link>
+						</li>
 					</ul>
 				</Grid>
 				<Grid className="header2__right" item sm={3}>
@@ -33,12 +57,10 @@ const Header2 = () => {
 					</div>
 
 					<div className="header2__right--cart">
-						<p>
-							<Link to="/cart" className="cart">
-								Cart Items
-							</Link>
-						</p>
-						<LocalMallOutlined className="header2__right--bag" />
+						<p>Cart Items</p>
+						<Link to="/cart" className="link-items">
+							<LocalMallOutlined className="header2__right--bag" />
+						</Link>
 					</div>
 				</Grid>
 			</Grid>
