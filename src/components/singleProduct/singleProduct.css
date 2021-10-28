@@ -11,6 +11,10 @@ body {
     border: 5px solid black;
 } */
 
+.singleProduct {
+    margin-top: 250px;
+}
+
 .product-container {
     padding-top: 100px;
 }

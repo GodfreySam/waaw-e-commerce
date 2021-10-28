@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./category.css";
 import {
 	ArrowBackIosOutlined,
@@ -7,6 +8,11 @@ import {
 import { IconButton } from "@material-ui/core";
 
 const Category = ({ topCategories }) => {
+		let history = useHistory();
+
+		// const handleClick = () => {
+		// 	history.push("/products");
+		// };
 	return (
 		<div className="categories">
 			<div className="categories__header">
@@ -15,9 +21,13 @@ const Category = ({ topCategories }) => {
 			<div className="categories__body">
 				<div className="categories__products">
 					{topCategories.map((category) => (
-						<div className="category" key={category.id}>
+						<div
+							className="category"
+							key={category.id}
+							onClick={() => history.push(`/product-details/${category.id}`)}
+						>
 							<div className="category__top">
-								<img src={category.image} alt="" />
+								<img src={category.image} alt={category.name} />
 							</div>
 							<div className="category__bottom">
 								<p>{category.name}</p>
