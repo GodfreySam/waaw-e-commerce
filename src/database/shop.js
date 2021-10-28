@@ -3,28 +3,28 @@ const shopItems = [
 		id: "01",
 		name: "Orange Juice",
 		image:
-			"https://res.cloudinary.com/freyman/image/upload/v1635417058/grp1-ecom/arrival-images/org_kskrql.jpg",
+			"https://res.cloudinary.com/freyman/image/upload/v1635417058/grp1-ecom/arrival-images/org2_ltntrc.png",
 		price: "10.99",
 	},
 	{
 		id: "02",
 		name: "Green Juice",
 		image:
-			"https://res.cloudinary.com/freyman/image/upload/v1635417057/grp1-ecom/arrival-images/green-juice_f9ednc.png",
+			"https://res.cloudinary.com/freyman/image/upload/v1635417059/grp1-ecom/arrival-images/green-juice2_m59cop.png",
 		price: "11.99",
 	},
 	{
 		id: "03",
 		name: "Orange Juice",
 		image:
-			"https://res.cloudinary.com/freyman/image/upload/v1635417057/grp1-ecom/arrival-images/orange-juice2_zgydhv.png",
+			"https://res.cloudinary.com/freyman/image/upload/v1635417057/grp1-ecom/arrival-images/orange-juice1_dqpkjg.png",
 		price: "14.00",
 	},
 	{
 		id: "04",
 		name: "Smoothie Juice",
 		image:
-			"https://res.cloudinary.com/freyman/image/upload/v1635417058/grp1-ecom/arrival-images/smoothie-juice_gkvliz.png",
+			"https://res.cloudinary.com/freyman/image/upload/v1635417057/grp1-ecom/arrival-images/smoothie-juice2_iwkkqm.png",
 		price: "16.00",
 	},
 	{

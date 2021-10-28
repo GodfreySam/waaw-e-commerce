@@ -3,9 +3,11 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../components/Home";
 import ShoppingCart from "../components/Shopping/ShoppingCart";
 import SingleProduct from "../components/singleProduct/SingleProduct";
+import Products from "../components/product/Products";
+import shopItems from "../database/shop";
+
 
 const Routes = ({
-	shopItems,
 	newArrivals,
 	topCategories,
 	trendingProducts,
@@ -23,9 +25,9 @@ const Routes = ({
 				<Route path="/cart" exact>
 					<ShoppingCart />
 				</Route>
-				{/* <Route path="/products" exact>
+				<Route path="/products" exact>
 					<Products shopItems={shopItems} />
-				</Route> */}
+				</Route>
 				<Route path="/product-details/:id" exact>
 					<SingleProduct />
 				</Route>
