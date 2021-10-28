@@ -4,7 +4,6 @@ import "./singleProduct.css";
 import { Container } from "@material-ui/core";
 import { BiUser, BiSearch } from "react-icons/bi";
 import { GrCart } from "react-icons/gr";
-// import cart1 from "../../images/cart1.png";
 import Ratings from "../Ratings/Ratings";
 import FlavourButtons from "../Icons/FlavourIcons";
 import Quantity from "../Quantity/Quantity";
@@ -12,14 +11,13 @@ import Like from "../Like/Like";
 import Button from "../Buttons/Button";
 import shopItems from "../../database/shop";
 
-
 const SingleProduct = () => {
 	const { id } = useParams();
 	return (
 		<div className="singleProduct">
 			{shopItems
 				.filter((item) => item.id === id)
-				.map((item) =>
+				.map((item) => (
 					<Container
 						key={item.id}
 						style={{
@@ -91,7 +89,7 @@ const SingleProduct = () => {
 							</div>
 						</div>
 					</Container>
-				)}
+				))}
 		</div>
 	);
 };
