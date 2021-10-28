@@ -1,14 +1,10 @@
 .recipe__container{
-<<<<<<< HEAD
-    background: url('../assets/bg.png');
-=======
     height: 700px;
     width: 100%;
    margin: auto;
 }
 .recipe__content{
     background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
->>>>>>> f27b84efa1ca5eedece2af222500538f60308cf9
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
