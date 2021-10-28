@@ -67,6 +67,7 @@ line-height: 1.5;
     width: 347px;
     border-radius: 0 0 150px 150px;
     background-color: #fff;
+    z-index: 1;
 }
 
 .recipe__image1
