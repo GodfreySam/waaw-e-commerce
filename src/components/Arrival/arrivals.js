@@ -1,27 +1,22 @@
-import A1 from '../../assets/arrival-images/org.jpg';
-import A2 from '../../assets/arrival-images/green-juice.png';
-import A3 from '../../assets/arrival-images/orange-juice2.png';
-import A4 from '../../assets/arrival-images/smoothie-juice.png';
-
 const arrivals = [
     {
         id: '1',
-        icon: A1,
+        icon: 'https://res.cloudinary.com/freyman/image/upload/v1635417058/grp1-ecom/arrival-images/org_kskrql.jpg',
         title: 'Orange Juice',
     },
     {
         id: '2',
-        icon: A2,        
+        icon: 'https://res.cloudinary.com/freyman/image/upload/v1635417057/grp1-ecom/arrival-images/green-juice_f9ednc.png',        
         title: 'Green Juice'
     },
     {
         id: '3',
-        icon: A3,
+        icon: 'https://res.cloudinary.com/freyman/image/upload/v1635417057/grp1-ecom/arrival-images/orange-juice2_zgydhv.png',
         title: 'Orange Juice',
     },
     {
         id: '4',
-        icon: A4,
+        icon: 'https://res.cloudinary.com/freyman/image/upload/v1635417058/grp1-ecom/arrival-images/smoothie-juice_gkvliz.png',
         title: 'Smoothie Juice',
     }
 ]

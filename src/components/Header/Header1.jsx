@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import React from 'react'
 import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
 import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined';
 
-=======
-import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
-import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined';
-import React from 'react'
->>>>>>> 49ea3f108a5f4864bb3eaee55f471dc9e98e01da
 
 const Header1 = () => {
     return (

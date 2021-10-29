@@ -3,9 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../components/Home";
 import ShoppingCart from "../components/Shopping/ShoppingCart";
 import SingleProduct from "../components/singleProduct/SingleProduct";
-import Products from "../components/product/Products";
+import Products from "../components/Product/Products";
 import shopItems from "../database/shop";
-
 
 const Routes = ({
 	newArrivals,
