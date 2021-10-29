@@ -1,0 +1,190 @@
+.recipe__container{
+    height: 700px;
+    width: 100%;
+   margin: auto;
+}
+.recipe__content{
+    background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    height: 90%;
+    width: 100%;
+    /* margin: auto; */
+}
+.recipe__card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+   
+}
+.recipe__title{
+text-align: center;
+margin: 20px 0 25px 0;
+font-size: 15px;
+}
+.recipe__note{
+text-align: center;
+margin: 0 50px 0 60px;
+font-size: 13px;
+font-weight: 500;
+line-height: 1.5;
+}
+.recipe__description{
+    position: absolute;
+    bottom: 50;
+    top: 2570px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 347px;
+    border-radius: 0 0 150px 150px;
+     background-color: #fff; 
+}
+.recipe__description1{
+    position: absolute;
+    bottom: 50;
+    top: 2570px;
+    right: 52.1%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 347px;
+    border-radius: 0 0 150px 150px;
+    background-color: #fff; 
+}
+.recipe__description3{
+    position: absolute;
+    bottom: 50;
+    top: 2570px;
+    left: 78.5%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 347px;
+    border-radius: 0 0 150px 150px;
+    background-color: #fff;
+}
+
+.recipe__image1
+{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+}
+.recipe__image2{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+}
+.recipe__image3{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 630px) {
+    
+    .recipe__card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+       
+       
+    }
+    .recipe__content{
+        background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 90%;
+        width: 100%;
+        /* margin: auto; */
+    }
+    .recipe__image1
+{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    
+}
+.recipe__image2{
+    display: none;
+}
+.recipe__image3{
+    display: none;
+}
+.recipe__description{
+   display: none;
+}
+.recipe__description1{
+   display: none;
+}
+.recipe__description3{
+   display: none;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 950px) and (min-width: 600px)  {
+    .recipe__card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+       
+       
+    }
+    .recipe__content{
+        background: url('https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/bg_lr0kaw.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 90%;
+        width: 100%;
+        /* margin: auto; */
+    }
+    .recipe__image1
+{
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+.recipe__image2{
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+.recipe__image3{
+    display: none;
+}
+    .recipe__description{
+        display: none;
+     }
+     .recipe__description1{
+        display: none;
+     }
+     .recipe__description3{
+        display: none;
+     }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

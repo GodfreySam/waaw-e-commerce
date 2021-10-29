@@ -1,3 +1,9 @@
+.trending__title{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 30px 0 30px 0;
+}
 .products__container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -34,3 +40,19 @@ font-weight: bold;
     font-weight: bold;
     color: rgb(146, 141, 141);
 }
+
+@media only screen and (max-width: 600px) {
+    .products__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: auto;
+       
+    }
+    .products__single{
+        background-color: #f7f7f7;
+        width: auto;
+        margin-bottom: 10px;
+        text-align: center;
+        }
+  }

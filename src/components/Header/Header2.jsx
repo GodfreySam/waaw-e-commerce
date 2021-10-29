@@ -5,6 +5,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Divider, Drawer, Grid, IconButton, InputBase, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import { ChevronLeft, ChevronRight, Inbox, LocalMallOutlined, Mail, Menu} from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -49,16 +50,20 @@ const Header2 = () => {
 		<div className="container">
 			<Grid className="header2">
 				<Grid className="header2__left" item sm={1} xs={1}>
-					<h1>Frotoo</h1>
+					<h1>
+						<Link to="/" className="logo">
+							Frotoo
+						</Link>
+					</h1>
 				</Grid>
 				<Grid className="header2__middle" item sm={12} xs={8}>
 					<Grid className="header2__lists" >
-						<Grid className="header2__list" item sm={2} xs={2}>Menu</Grid>
-						<Grid className="header2__list" item sm={2} xs={2}>Pages</Grid>
-						<Grid className="header2__list" item sm={2} xs={2}>Gallery</Grid>
-						<Grid className="header2__list" item sm={2} xs={2}>Blog</Grid>
-						<Grid className="header2__list" item sm={2} xs={2}>Shop</Grid>
-						<Grid className="header2__list" item sm={2} xs={2}>Elements</Grid>
+						<Grid className="header2__list" item sm={2} xs={2}><Link to="/products" className="link-items">Menu</Link></Grid>
+						<Grid className="header2__list" item sm={2} xs={2}><Link to="/products" className="link-items">Pages</Link></Grid>
+						<Grid className="header2__list" item sm={2} xs={2}><Link to="/products" className="link-items">Gallery</Link></Grid>
+						<Grid className="header2__list" item sm={2} xs={2}><Link to="/products" className="link-items">Blog</Link></Grid>
+						<Grid className="header2__list" item sm={2} xs={2}><Link to="/products" className="link-items">Shop</Link></Grid>
+						<Grid className="header2__list" item sm={2} xs={2}><Link to="/products" className="link-items">Elements</Link></Grid>
 					</Grid>
 				</Grid>
 				<Grid className="header2__right" item sm={4} xs={3}>

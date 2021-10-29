@@ -1,11 +1,9 @@
 .pageSix {
 	font-family: "Poppins", sans-serif;
-	background-image: url("../../images/asset2.png");
+	background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/asset2_ee6bsk.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
-
-	/* max-width: 1300px; */
 }
 
 .pageSix-content {
@@ -91,13 +89,13 @@
 
 @media screen and (max-width: 1260px) {
 	.pageSix {
-		background-image: url("../../images/asset2a.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/asset2a_sastln.png") !important;
 	}
 }
 
 @media screen and (max-width: 1180px) {
 	.pageSix {
-		background-image: url("../../images/asset2b.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2b_o5scgl.png") !important;
 	}
 
 	.pageSix-content__left img {
@@ -134,7 +132,7 @@
 	}
 
 	.pageSix {
-		background-image: url("../../images/asset2d.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2d_q1cspa.png") !important;
 	}
 
 	.pageSix-content__right-header {
@@ -148,7 +146,7 @@
 
 @media screen and (max-width: 980px) {
 	.pageSix {
-		background-image: url("../../images/asset2d.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2d_q1cspa.png") !important;
 	}
 
 	.pageSix-content__right form {
@@ -183,7 +181,7 @@
 
 @media screen and (max-width: 904px) {
 	.pageSix {
-		background-image: url("../../images/asset2d.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2d_q1cspa.png") !important;
 	}
 
 	.pageSix-content__left img {
@@ -223,7 +221,7 @@
 
 @media screen and (max-width: 885px) {
 	.pageSix {
-		background-image: url("../../images/asset2e.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
 		background-size: auto;
 	}
 
@@ -276,7 +274,7 @@
 
 @media screen and (max-width: 883px) {
 	.pageSix {
-		background-image: url("../../images/asset2c.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2c_mhwzjy.png") !important;
 		background-size: 90%;
 	}
 }
@@ -289,7 +287,7 @@
 
 	.pageSix {
 		font-family: "Poppins", sans-serif;
-		background-image: url("../../images/asset2e.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 90%;
@@ -334,7 +332,7 @@
 
 	.pageSix {
 		font-family: "Poppins", sans-serif;
-		background-image: url("../../images/asset2e.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 90%;
@@ -397,7 +395,7 @@
 	
 	.pageSix {
 		font-family: "Poppins", sans-serif;
-		background-image: url("../../images/asset2e.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: auto;
@@ -412,7 +410,7 @@
 	
 	.pageSix {
 		font-family: "Poppins", sans-serif;
-		background-image: url("../../images/asset2e.png") !important;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: auto;

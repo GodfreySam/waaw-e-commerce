@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
 }
 
+<<<<<<< HEAD
 .body{
    width: 100%;
    border: 3px solid brown;
+=======
+.home {
+	width: 100%;
+	max-width: 1550px;
+	margin: 0 auto;
+>>>>>>> 49ea3f108a5f4864bb3eaee55f471dc9e98e01da
 }

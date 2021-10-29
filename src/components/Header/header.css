@@ -150,6 +150,11 @@
     cursor: pointer;
     /* border: 1px solid blue; */
 }
+
+.logo, .link-items {
+    text-decoration: none;
+    color: white;
+}
 .header2__middle{
     display: flex;
     justify-content: center;
