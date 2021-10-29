@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 
 	btn1: {
-		backgroundColor: "#3F51B5",
+		backgroundColor: "rgb(13, 136, 136)",
 		color: "#fff",
 		fontWeight: "bold",
 		width: "100%",
