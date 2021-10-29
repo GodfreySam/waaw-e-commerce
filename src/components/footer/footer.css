@@ -1,24 +1,5 @@
 .footer {
-   font-family: 'Lato', sans-serif !important;
-}
-
-.footer__header {
-   width: 100%;
-   text-align: center;
-   line-height: 0.1rem;
-   margin: 10px 0 20px;
-   padding: 1rem 0;
-}
-
-.footer__header span:after,
-.footer__header span:before {
-   content: "\00a0\00a0\00a0\00a0\00a0";
-   text-decoration: line-through;
-   padding: 0 1rem;
-}
-
-.footer__first-item_img img {
-   max-width: 200px;
+	background-color: rgb(247, 247, 247);
 }
 
 .footer__first-item {
@@ -26,53 +7,20 @@
 	display: flex;
 	flex-wrap: wrap;
    padding: 0;
-   background-color: rgb(247, 247, 247);
 }
 
 .footer__first-item > * {
-	flex: 0 0 160px;
+	flex: 0 0 14.5%;
 }
 
 .footer__second-item {
+	justify-content: space-evenly;
 	display: flex;
 	flex-wrap: wrap;
-   justify-content: space-around;
    background-color: rgb(247, 247, 247);
    color: rgb(102, 99, 99);
-   font-size: smaller;
-   padding: 20px 0;
+   padding: 0;
 }
-
-.footer__second-item > * {
-	flex: 0 0 150px;
-}
-
-.footer__second-item ul:nth-child(1) {
-   width: 320px;
-   margin: 0 auto;
- }
-
- .footer__second-item ul:nth-child(2),
- .footer__second-item ul:nth-child(3),
- .footer__second-item ul:nth-child(4) {
-    margin-right: 50px;
- }
-
- @media screen and (max-width: 1000px) {
-  .footer__second-item ul:nth-child(2),
- .footer__second-item ul:nth-child(3),
- .footer__second-item ul:nth-child(4) {
-    margin-right: 30px;
- }  
- }
- 
-  @media screen and (max-width: 700px) {
-  .footer__second-item ul:nth-child(2),
- .footer__second-item ul:nth-child(3),
- .footer__second-item ul:nth-child(4) {
-    margin-right: auto;
- }  
- }
 
 .footer__second-item_item-header {
    font-weight: bolder;
@@ -86,27 +34,19 @@
    padding: 0.8rem 0;
 }
 
-.footer__second-item .item-list {
-   padding-left: 2rem;
-}
-
-.footer-address-list {
+.footer__second-item_item-list {
    display: flex;
    flex-direction: row;
    align-items: center;
 }
 
-.item-list .address {
-   display: block;
-}
-
-.footer-icon {
-   font-size: 25px;
+.footer__second-item .item-list {
+   padding-left: 1rem;
 }
 
 .footer__second-item_item-payment__platform  {
    list-style: none;
-   padding-left: 3rem;
+   margin-left: -10px;
    display: flex;
    flex-wrap: wrap;
 }
@@ -116,13 +56,13 @@
 }
 
 .payment__platform-img img {
-   width: 45px;
+   max-width: 30px;
    height: auto;
-   padding-right: 0.7rem;
+   padding-right: 0.5rem;
 }
 
 .payment__platform-img {
-	flex: 0 0 10%;
+	flex: 0 0 14.5%;
 }
 
 .footer__second-item_icon {
@@ -134,7 +74,6 @@
 .footer__second-item_item-icons {
    display: flex;
    flex-wrap: wrap;
-   padding-left: 3rem;
 }
 
 .footer__second-item_item > li {
@@ -147,15 +86,14 @@
 }
 
 .footer__third-item {
-   font-family: 'Lato', sans-serif !important;
+   list-style: none;
 	justify-content: center;
 	display: flex;
    background-color: black !important;
    color: rgb(247, 247, 247);
 }
 
-.footer__third-item ul li {
-   margin: 1rem auto;
-   list-style: none;
+.footer__third-item li {
+   margin: 2rem auto;
    padding-bottom: 0;
 }
