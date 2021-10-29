@@ -8,11 +8,12 @@ import Ratings from "../Ratings/Ratings";
 import FlavourButtons from "../Icons/FlavourIcons";
 import Quantity from "../Quantity/Quantity";
 import Like from "../Like/Like";
-import Button from "../Buttons/Button";
+// import Button from "../Buttons/Button";
 import shopItems from "../../database/shop";
 
-const SingleProduct = () => {
+const SingleProduct = ({ handleAddProduct }) => {
 	const { id } = useParams();
+
 	return (
 		<div className="singleProduct">
 			{shopItems
@@ -80,7 +81,15 @@ const SingleProduct = () => {
 									<Like />
 								</div>
 								<div className="product__button">
-									<Button />
+									<div className="button__cart">
+										<button
+											class="btn btn-2 btn-sep icon-arrow"
+											onClick={() => handleAddProduct(item)}
+										>
+											Add to cart
+										</button>
+									</div>
+									{/* <Button  /> */}
 								</div>
 							</div>
 							<div className="product__line">

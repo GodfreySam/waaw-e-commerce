@@ -6,11 +6,14 @@ import SingleProduct from "../components/singleProduct/SingleProduct";
 import Products from "../components/product/Products";
 import shopItems from "../database/shop";
 
-
 const Routes = ({
 	newArrivals,
 	topCategories,
 	trendingProducts,
+	cartItems,
+	handleAddProduct,
+	handleRemoveProduct,
+	handleCartClearance,
 }) => {
 	return (
 		<>
@@ -23,13 +26,18 @@ const Routes = ({
 					/>
 				</Route>
 				<Route path="/cart" exact>
-					<ShoppingCart />
+					<ShoppingCart
+						cartItems={cartItems}
+						handleAddProduct={handleAddProduct}
+						handleRemoveProduct={handleRemoveProduct}
+						handleCartClearance={handleCartClearance}
+					/>
 				</Route>
 				<Route path="/products" exact>
-					<Products shopItems={shopItems} />
+					<Products shopItems={shopItems} handleAddProduct={handleAddProduct} />
 				</Route>
 				<Route path="/product-details/:id" exact>
-					<SingleProduct />
+					<SingleProduct handleAddProduct={handleAddProduct} />
 				</Route>
 			</Switch>
 		</>

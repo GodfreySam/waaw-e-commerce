@@ -5,7 +5,7 @@ import { Grid, InputBase } from "@material-ui/core";
 import { LocalMallOutlined } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
-const Header2 = () => {
+const Header2 = ({ cartItems }) => {
 	return (
 		<div>
 			<Grid className="header2">
@@ -60,6 +60,9 @@ const Header2 = () => {
 						<p>Cart Items</p>
 						<Link to="/cart" className="link-items">
 							<LocalMallOutlined className="header2__right--bag" />
+							<span className="cart-length">
+								{cartItems.length === 0 ? "" : cartItems.length}
+							</span>
 						</Link>
 					</div>
 				</Grid>
