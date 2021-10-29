@@ -1,38 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
+import clsx from 'clsx';
 import SearchIcon from "@material-ui/icons/Search";
-import { InputBase } from "@material-ui/core";
-import { LocalMallOutlined } from "@material-ui/icons";
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { Divider, Drawer, Grid, IconButton, InputBase, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { ChevronLeft, ChevronRight, Inbox, LocalMallOutlined, Mail, Menu} from "@material-ui/icons";
+
+const drawerWidth = 240;
+
+const useStyles = makeStyles((theme) => ({
+	root: {
+	  display: 'flex',
+	},
+	hide: {
+	  display: 'none',
+	},
+	drawer: {
+	  width: drawerWidth,
+	  flexShrink: 0,
+	},
+	drawerPaper: {
+	  width: drawerWidth,
+	},
+	drawerHeader: {
+	  display: 'flex',
+	  alignItems: 'center',
+	  padding: theme.spacing(0, 1),
+	  // necessary for content to be below app bar
+	  ...theme.mixins.toolbar,
+	  justifyContent: 'flex-start',
+	},
+  }));
 
 const Header2 = () => {
+	const classes = useStyles();
+	const theme = useTheme();
+	const [open, setOpen] = useState(false);
+
+	const handleDrawerOpen = () => {
+		setOpen(true);
+	};
+
+	const handleDrawerClose = () => {
+		setOpen(false);
+	};
+
 	return (
 		<div className="container">
-			<div className="header2">
-				<div className="header2__left">
+			<Grid className="header2">
+				<Grid className="header2__left" item sm={1} xs={1}>
 					<h1>Frotoo</h1>
-				</div>
-				<div className="header2__middle">
-					<ul className="header2__lists">
-						<li className="header2__list">Menu</li>
-						<li className="header2__list">Pages</li>
-						<li className="header2__list">Gallery</li>
-						<li className="header2__list">Blog</li>
-						<li className="header2__list">Shop</li>
-						<li className="header2__list">Elements</li>
-					</ul>
-				</div>
-				<div className="header2__right">
-					<div className="header2__right--searchbox">
+				</Grid>
+				<Grid className="header2__middle" item sm={12} xs={8}>
+					<Grid className="header2__lists" >
+						<Grid className="header2__list" item sm={2} xs={2}>Menu</Grid>
+						<Grid className="header2__list" item sm={2} xs={2}>Pages</Grid>
+						<Grid className="header2__list" item sm={2} xs={2}>Gallery</Grid>
+						<Grid className="header2__list" item sm={2} xs={2}>Blog</Grid>
+						<Grid className="header2__list" item sm={2} xs={2}>Shop</Grid>
+						<Grid className="header2__list" item sm={2} xs={2}>Elements</Grid>
+					</Grid>
+				</Grid>
+				<Grid className="header2__right" item sm={4} xs={3}>
+					<Grid className="header2__right--searchbox" item sm={12}>
 						<InputBase className="header2__right--input" placeholder="Search..." />
 						<SearchIcon className="header2__right--search" />
-					</div>
+					</Grid>
 
-					<div className="header2__right--cart">
+					<Grid className="header2__right--cart" item sm={12}>
 						<p>Cart Items</p>
 						<LocalMallOutlined className="header2__right--bag" />
-					</div>
+						<IconButton
+							color="inherit"
+							aria-label="open drawer"
+							edge="end"
+							onClick={handleDrawerOpen}
+							className={`header2__right--ham ${clsx(open && classes.hide)}`}
+          				>
+            			<Menu />
+          				</IconButton>
+					</Grid>
+					
+				</Grid>
+			</Grid>
+			<Drawer
+				className={classes.drawer}
+				variant="persistent"
+				anchor="right"
+				open={open}
+				classes={{
+				paper: classes.drawerPaper,
+				}}
+			>
+				<div className={classes.drawerHeader}>
+					<IconButton onClick={handleDrawerClose}>
+						{theme.direction === 'rtl' ? <ChevronLeft /> : <ChevronRight />}
+					</IconButton>
 				</div>
-			</div>
+				<Divider />
+					<List className="header__drawer">
+						{['Menu', 'Pages', 'Gallery', 'Blog', 'Shop', 'Elements'].map((text, index) => (
+							<ListItem button key={text}>
+							<ListItemIcon>{index % 2 === 0 ? <Inbox /> : <Mail />}</ListItemIcon>
+							<ListItemText primary={text} />
+							</ListItem>
+						))}
+					</List>
+				<Divider />
+			</Drawer>
 		</div>
 	);
 };

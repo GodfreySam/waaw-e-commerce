@@ -11,8 +11,6 @@ const Category = ({ image, name, newPrice, oldPrice }) => {
                     <p className="price newPrice">${newPrice}</p>
                     <p className="price oldPrice">${oldPrice}</p>
                 </div>
-  
-                
             </div>
         </div>
     )

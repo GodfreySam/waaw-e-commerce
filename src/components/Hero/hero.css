@@ -58,3 +58,121 @@
     background: white;
     cursor: pointer;
 }
+
+@media (max-width: 1280px) {
+    .hero_section{
+        background-size: cover;
+    }
+    .hero_section--content{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1043px) {
+    .hero_section{
+        background-size: cover;
+        height: 450px;
+    }
+    .hero_section--content{
+        width: 50%;
+        margin: 12em auto auto 3.5em;
+    }
+    .hero_section--title{
+        font-size: 2.5em;
+    }
+    .hero_section--text{
+        font-size: 1.2em;
+    }
+    .hero_section--button{
+        padding: .4em .7em;
+        font-size: 1.1em;      
+    }
+}
+
+@media (max-width: 785px) {
+    .hero_section{
+        background-size: cover;
+        height: 350px;
+        margin-top: 4.5em;
+    }
+    .hero_section--content{
+        width: 50%;
+        margin: 7em auto auto 3em;
+    }
+    .hero_section--title{
+        font-size: 2em;
+    }
+    .hero_section--text{
+        font-size: 1em;
+    }
+    .hero_section--button{
+        padding: .4em .7em;
+        font-size: 1em;      
+    }
+}
+
+@media (max-width: 652px) {
+    .hero_section{
+        height: 280px;
+        margin-top: 4.5em;
+    }
+    .hero_section--content{
+        width: 40%;
+        margin: 7em auto auto 3em;
+    }
+    .hero_section--title{
+        font-size: 1.5em;
+    }
+    .hero_section--text{
+        font-size: .75em;
+    }
+    .hero_section--button{
+        padding: .2em .5em;
+        font-size: .7em;      
+    }
+}
+@media (max-width: 534px) {
+    .hero_section{
+        height: 200px;
+        margin-top: 6.5em;
+    }
+    .hero_section--content{
+        width: 40%;
+        margin: 4em auto auto 2em;
+    }
+    .hero_section--title{
+        font-size: 1.2em;
+    }
+    .hero_section--text{
+        font-size: .5em;
+        margin-bottom: 0;
+    }
+    .hero_section--button{
+        padding: .2em .5em;
+        font-size: .6em;      
+    }
+    .hero__pagination{
+        width: 45px;
+    }
+    .hero__pagination--before,.hero__pagination--after{
+        width: 20px;
+        height: 3px;
+    }
+}
+@media (max-width: 432px) {
+    .hero_section{
+        height: 180px;
+    }
+    .hero_section--title{
+        font-size: 1em;
+    }
+    .hero_section--text{
+        font-size: .45em;
+    }
+    .hero_section--button{
+        font-size: .55em;      
+    }
+    .hero__pagination{
+        margin-top: 1.5em;
+    }
+}
