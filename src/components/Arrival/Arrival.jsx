@@ -1,9 +1,9 @@
-import React from 'react';
-import "./arrival.css"
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import "./arrival.css";
+import { useHistory } from "react-router-dom";
 
 const Arrival = ({ newArrivals }) => {
-		let history = useHistory();
+	let history = useHistory();
 	return (
 		<div className="arrivals">
 			<div className="arrivals__header">
@@ -29,4 +29,4 @@ const Arrival = ({ newArrivals }) => {
 	);
 };
 
-export default Arrival
+export default Arrival;
