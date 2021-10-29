@@ -85,7 +85,7 @@
 @media (max-width: 880px) {
     .arrival__top{
         width: 9em;
-        height: 8em;
+        height: 8em; 
     }
     .arrival__top img{
         width: 101%;
