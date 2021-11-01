@@ -16,7 +16,7 @@ const welcomeEmail = async (req, firstname, email, secretToken) => {
        click on the link below to activate your account.
        <br/>
        <br/>
-       Verification Link: http://${req.headers.host}/user/verify/${secretToken}
+       Verification Link: https://frooto-online-shop.herokuapp.com/user/verify/${secretToken}
       <br/>
       <br/>
          Happy shopping !!!!!

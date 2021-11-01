@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 618px) {
 	.footer__second-item ul:nth-child(3) {
-		margin-left: 5rem;
+		/* margin-left: 5rem; */
 	}
 }
 
