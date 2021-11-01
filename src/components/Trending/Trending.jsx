@@ -52,9 +52,9 @@ const Trending = ({ trendingProducts }) => {
 								<div className="products__bottom">
 									<p className="products__name">{trend.name}</p>
 									<div className="products__pricing">
-										<p className="products__price">{trend.oldPrice}</p>
+										<p className="products__price">${trend.oldPrice}</p>
 										<p className="products__discount">
-											<s>{trend.price}</s>
+											<s>${trend.price}</s>
 										</p>
 									</div>
 								</div>

@@ -1,13 +1,14 @@
-import React from 'react'
 import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
 import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined';
-
+import React, { useContext } from 'react'
+import { AuthContext } from '../../context/AuthContext';
 
 const Header1 = () => {
+    const {user} = useContext(AuthContext)
     return (
         <div className="header1">
             <div className="header1__left">
-                <p>Welcome to our online store!</p>
+                <p>Welcome {user ? user.username : 'to our online store!'}</p>
             </div>
             
             <div className="header1__right">

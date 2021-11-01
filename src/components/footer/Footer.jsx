@@ -1,49 +1,52 @@
 import React from "react";
-import Asset11 from "../../images/asset11.png";
-import Asset12 from "../../images/asset12.png";
-import Asset13 from "../../images/asset13.png";
-import Asset14 from "../../images/asset14.png";
-import Asset15 from "../../images/asset15.png";
-import Asset16 from "../../images/asset16.png";
-import Visa from "../../images/visa.png"
-import Mastercard from "../../images/master-card.png"
-import Unionpay from "../../images/union-pay.png"
-import Discover from "../../images/discover.png"
-import Giro from "../../images/giro-pay.png"
-import Amex from "../../images/amex.png";
-
 import * as FaIcons from "react-icons/fa";
 import * as FiIcons from "react-icons/fi";
 import * as MdIcons from "react-icons/md";
 import * as HiIcons from "react-icons/hi";
 import * as GrIcons from "react-icons/gr";
-
-
-
-
-import './footer.css';
-
+import "./footer.css";
 const Footer = () => {
 	return (
-		<div className="footer">
+		<div className="footer home">
+			<h4 className="footer__header">
+				<span>@FOLLOW US ON INSTAGRAM</span>
+			</h4>
 			<div className="footer__first-item">
 				<div className="footer__first-item_img">
-					<img src={Asset11} alt="" srcset="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417548/grp1-ecom/images/asset11_qg7fgj.png"
+						alt="cup of juice"
+					/>
 				</div>
 				<div className="footer__first-item_img">
-					<img src={Asset12} alt="" srcset="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417548/grp1-ecom/images/asset12_wbxftp.png"
+						alt="cup of juice"
+					/>
 				</div>
 				<div className="footer__first-item_img">
-					<img src={Asset13} alt="" srcset="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417548/grp1-ecom/images/asset13_swfdf5.png"
+						alt="cup of juice"
+					/>
 				</div>
 				<div className="footer__first-item_img">
-					<img src={Asset14} alt="" srcset="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417550/grp1-ecom/images/asset14_ifecor.png"
+						alt="cup of juice"
+					/>
 				</div>
 				<div className="footer__first-item_img">
-					<img src={Asset15} alt="" srcset="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417548/grp1-ecom/images/asset15_hnvjzg.png"
+						alt="cup of juice"
+					/>
 				</div>
 				<div className="footer__first-item_img">
-					<img src={Asset16} alt="" srcset="" />
+					<img
+						src="https://res.cloudinary.com/freyman/image/upload/v1635417549/grp1-ecom/images/asset16_wiqpmx.png"
+						alt="cup of juice"
+					/>
 				</div>
 			</div>
 			<div className="footer__second-item">
@@ -51,41 +54,59 @@ const Footer = () => {
 					<li className="footer__second-item_item-header contact-header">
 						Contact us
 					</li>
-					<li className="footer__second-item_item-list">
-						<MdIcons.MdOutlineLocationOn />
-						<span className="item-list">
-							<span>Address:2168 S Archer Ave, Chicago,</span>
+					<li className="footer__second-item_item-list footer-address-list">
+						<MdIcons.MdOutlineLocationOn className="footer-icon" />
+						<span className="item-list address">
+							<span className="address1">Address: 2168 S Archer Ave, Chicago,</span>
 							<br />
-							<span className="address">United State</span>
+							<span className="address2">United State</span>
 						</span>
 					</li>
-					<li className="footer__second-item_item-list">
-						<FiIcons.FiPhoneCall />
+					<li className="footer__second-item_item-list footer-address-list">
+						<FiIcons.FiPhoneCall className="footer-icon" />
 						<span className="item-list">Phone: +(01) 312-808-1999</span>
 					</li>
-					<li className="footer__second-item_item-list">
-						<HiIcons.HiOutlineMail />
+					<li className="footer__second-item_item-list footer-address-list">
+						<HiIcons.HiOutlineMail className="footer-icon" />
 						<span className="item-list">Email: support@althothemes.com</span>
 					</li>
 					<li className="footer__second-item_item-list">
 						<ul className="footer__second-item_item-payment__platform">
 							<li className="payment__platform-img">
-								<img src={Visa} alt="visa" srcset="" />
+								<img
+									src="https://res.cloudinary.com/freyman/image/upload/v1635417550/grp1-ecom/images/visa_esqjxq.png"
+									alt="visa"
+								/>
 							</li>
 							<li className="payment__platform-img">
-								<img src={Mastercard} alt="mastercard" srcset="" />
+								<img
+									src="https://res.cloudinary.com/freyman/image/upload/v1635417550/grp1-ecom/images/master-card_ingwtf.png"
+									alt="mastercard"
+								/>
 							</li>
 							<li className="payment__platform-img">
-								<img src={Unionpay} alt="unionpay" srcset="" />
+								<img
+									src="https://res.cloudinary.com/freyman/image/upload/v1635417550/grp1-ecom/images/union-pay_anzwbi.png"
+									alt="unionpay"
+								/>
 							</li>
 							<li className="payment__platform-img">
-								<img src={Discover} alt="discoverpay" />
+								<img
+									src="https://res.cloudinary.com/freyman/image/upload/v1635417549/grp1-ecom/images/discover_qimnqv.png"
+									alt="discoverpay"
+								/>
 							</li>
 							<li className="payment__platform-img">
-								<img src={Giro} alt="giropay" />
+								<img
+									src="https://res.cloudinary.com/freyman/image/upload/v1635417549/grp1-ecom/images/giro-pay_jc4nro.png"
+									alt="giropay"
+								/>
 							</li>
 							<li className="payment__platform-img">
-								<img src={Amex} alt="amexpay" />
+								<img
+									src="https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/amex_gmnq8y.png"
+									alt="amexpay"
+								/>
 							</li>
 						</ul>
 					</li>
@@ -115,21 +136,18 @@ const Footer = () => {
 					<li className="footer__second-item_icon">
 						<ul className="footer__second-item_item-icons">
 							<li>
-								<FaIcons.FaFacebookF />
+								<FaIcons.FaFacebookF className="footer-icon" />
 							</li>
 							<li>
-								<FaIcons.FaPinterestP />
+								<FaIcons.FaPinterestP className="footer-icon" />
 							</li>
 							<li>
-								<GrIcons.GrInstagram />
+								<GrIcons.GrInstagram className="footer-icon" />
 							</li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-			<ul className="footer__third-item">
-				<li>Copyright &cpoy; 2021.frooto</li>
-			</ul>
 		</div>
 	);
 };
