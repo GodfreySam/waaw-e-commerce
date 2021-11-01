@@ -3,10 +3,16 @@ const { model, Schema } = mongoose;
 
 let userSchema = new Schema(
 	{
+		firstname: String,
+		lastname: String,
 		username: String,
 		email: String,
 		password: String,
 		secretToken: String,
+		verified: {
+			type: Boolean,
+			default: false,
+		},
 	},
 	{ timestamps: true },
 );

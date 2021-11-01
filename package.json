@@ -10,9 +10,12 @@
 		"@testing-library/jest-dom": "^5.14.1",
 		"@testing-library/react": "^11.2.7",
 		"@testing-library/user-event": "^12.8.3",
+		"axios": "^0.24.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
+		"react-hot-toast": "^2.1.1",
 		"react-icons": "^4.3.1",
+		"react-paystack": "^3.0.5",
 		"react-router-dom": "^5.3.0",
 		"react-scripts": "4.0.3",
 		"web-vitals": "^1.1.2"
@@ -41,5 +44,5 @@
 			"last 1 safari version"
 		]
 	},
-	"proxy": "http://127.0.0.1:9000/api/v1"
+	"proxy": "http://localhost:9000"
 }

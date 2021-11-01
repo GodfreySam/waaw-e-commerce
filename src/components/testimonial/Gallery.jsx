@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
 	return (
-		<div className="gallery__container">
+		<div className="gallery__container home">
 			<div className="gallery__card">
 				<img
 					src="https://res.cloudinary.com/freyman/image/upload/v1635417381/grp1-ecom/assets/hand1_do1xup.jpg"

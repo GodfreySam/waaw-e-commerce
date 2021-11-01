@@ -11,6 +11,7 @@
     z-index: 100;
     background-color: #fabcbf;
 }
+
 .header1__left{
     display: flex;
     justify-content: flex-start;
@@ -123,21 +124,21 @@
     }
 }
 
-.header2{
-    display: flex;
-    top: 2.6em;
-    left: 0;
-    width: 100%;
-    /* width: 100vw; */
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rebeccapurple;
-    color: whitesmoke;
-    padding: 0 3.2em 0 4.2em;
-    position: fixed;
-    z-index: 100;
-    background-color: rgb(17, 17, 17);
+div.MuiGrid-root.header2 {
+	max-width: 1550px !important;
+    display: flex !important;
+    top: 2.6em !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border: 1px solid rebeccapurple !important;
+    color: whitesmoke !important;
+    padding: 0 3.2em 0 4.2em !important;
+    position: fixed !important;
+    z-index: 100 !important;
+    background-color: rgb(17, 17, 17) !important;
 }
+
 .header2__left{
     display: flex;
     justify-content: center;

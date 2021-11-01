@@ -4,7 +4,7 @@ import "./pageSix.css";
 const Pagesix = () => {
 
 	return (
-		<div className="pageSix">
+		<div className="pageSix home">
 			<div className="pageSix-content">
 				<div className="pageSix-content__left">
 					<img
@@ -24,14 +24,22 @@ const Pagesix = () => {
 					</form>
 
 					<div className="pageSix-content__app-market">
-						<button className="pageSix-content__app-market-button">
+						<button
+							onClick={
+								()=>(window.location.href = "https://itunes.apple.com/")
+							}
+							className="pageSix-content__app-market-button"
+						>
 							<img
 								className="pageSix-content__app-market-button"
 								src="https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/apple-store_gawirt.png"
 								alt="ios store"
 							/>
 						</button>
-						<button className="pageSix-content__app-market-button">
+						<button
+							onClick={()=>(window.location.href = "https://play.google.com/store/apps/")}
+							className="pageSix-content__app-market-button"
+						>
 							<img
 								className="pageSix-content__app-market-button"
 								src="https://res.cloudinary.com/freyman/image/upload/v1635417549/grp1-ecom/images/google-store_r3mt4l.png"

@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-import MainFooter from "./components/footer/MainFooter";
-import Footer from "./components/footer/Footer";
-import Header1 from "./components/Header/Header1";
-import Header2 from "./components/Header/Header2";
 import Routes from "./routes/Routes";
 import data from "./database/data";
 import newArrivals from "./database/newArrival";
 import shopItems from "./database/shop";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
 	const { topCategories, trendingProducts } = data;
@@ -51,8 +48,6 @@ const App = () => {
 	return (
 		<>
 			<Router>
-				<Header1 />
-				<Header2 cartItems={cartItems} />
 				<Routes
 					newArrivals={newArrivals}
 					topCategories={topCategories}
@@ -64,8 +59,26 @@ const App = () => {
 					handleCartClearance={handleCartClearance}
 				/>
 			</Router>
-			<Footer />
-			<MainFooter />
+			<Toaster
+				position="top-right"
+				toastOptions={{
+					className: "",
+					duration: 10000,
+					style: {
+						color: "#fff",
+					},
+					success: {
+						style: {
+							background: "green",
+						},
+					},
+					error: {
+						style: {
+							background: "red",
+						},
+					},
+				}}
+			/>
 		</>
 	);
 };

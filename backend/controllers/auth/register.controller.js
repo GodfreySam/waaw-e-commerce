@@ -5,8 +5,8 @@ const randomstring = require("randomstring");
 
 const creatNewUser = async (req, res, next) => {
 	try {
-		let { email, username, password, gender } = req.body;
-		if (!email || !username || !password || !gender)
+		let { firstname, lastname, email, username, password } = req.body;
+		if (!firstname || !lastname || !email || !username || !password)
 			return res
 				.status(400)
 				.json({ success: false, msg: "All fields are required" });
@@ -25,24 +25,25 @@ const creatNewUser = async (req, res, next) => {
 
 		let hashedPassword = bcryptjs.hashSync(password, 12);
 
-		let secretToken = randomstring.generate();
-
+		let secretToken = randomstring.generate(7);
+		
 		const newUser = new User({
+			firstname,
+			lastname,
 			username: newUsername,
 			email,
 			password: hashedPassword,
-			gender,
 			secretToken,
 		});
 
 		await newUser.save();
-		if (!newUser) return res.status(500).json({ msg: "An error has occurred" });
+		if (!newUser) return res.status(500).json({ success: false, msg: "An error has occurred" });
 
-		await welcomeEmail(req, newUser.username, newUser.email, newUser.secretToken);
+		await welcomeEmail(req, newUser.firstname, newUser.email, newUser.secretToken);
 
 		res.status(201).json({
 			success: true,
-			msg: "User saved successfully",
+			msg: "User registration successful",
 			user: newUser,
 		});
 	} catch (err) {

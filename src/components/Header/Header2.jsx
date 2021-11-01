@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./header.css";
 import clsx from 'clsx';
 import SearchIcon from "@material-ui/icons/Search";
@@ -6,6 +6,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Divider, Drawer, Grid, IconButton, InputBase, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import { ChevronLeft, ChevronRight, Inbox, LocalMallOutlined, Mail, Menu} from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 
 const drawerWidth = 240;
 
@@ -34,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Header2 = ({ cartItems }) => {
+	const { user } = useContext(AuthContext);
 	const classes = useStyles();
 	const theme = useTheme();
 	const [open, setOpen] = useState(false);
@@ -46,6 +48,11 @@ const Header2 = ({ cartItems }) => {
 		setOpen(false);
 	};
 
+	const logout = () => {
+		localStorage.removeItem('user');
+		window.location.href = "/";
+	}
+
 	return (
 		<div className="container">
 			<Grid className="header2">
@@ -57,13 +64,13 @@ const Header2 = ({ cartItems }) => {
 				<Grid className="header2__middle" item sm={12} xs={8}>
 					<Grid className="header2__lists">
 						<Grid className="header2__list" item sm={2} xs={2}>
-							<Link to="/products" className="link-items">
-								Menu
+							<Link to="/" className="link-items">
+								Home
 							</Link>
 						</Grid>
 						<Grid className="header2__list" item sm={2} xs={2}>
-							<Link to="/" className="link-items">
-								Pages
+							<Link to="/about" className="link-items">
+								About
 							</Link>
 						</Grid>
 						<Grid className="header2__list" item sm={2} xs={2}>
@@ -72,7 +79,7 @@ const Header2 = ({ cartItems }) => {
 							</Link>
 						</Grid>
 						<Grid className="header2__list" item sm={2} xs={2}>
-							<Link to="/" className="link-items">
+							<Link to="/blog-post" className="link-items">
 								Blog
 							</Link>
 						</Grid>
@@ -82,9 +89,19 @@ const Header2 = ({ cartItems }) => {
 							</Link>
 						</Grid>
 						<Grid className="header2__list" item sm={2} xs={2}>
-							<Link to="/products" className="link-items">
-								Elements
-							</Link>
+							{user ? (
+								<>
+									<Link onClick={logout} className="link-items">
+										Signout
+									</Link>
+								</>
+							) : (
+								<>
+									<Link to="/user/login" className="link-items">
+										Signin
+									</Link>
+								</>
+							)}
 						</Grid>
 					</Grid>
 				</Grid>

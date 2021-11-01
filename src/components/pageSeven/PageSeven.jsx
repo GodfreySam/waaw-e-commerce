@@ -3,7 +3,7 @@ import "./pageSeven.css";
 
 const PageSeven = () => {
 	return (
-		<div className="pageSeven">
+		<div className="pageSeven home">
 			<h3 className="pageSeven__header">From Our Blogs</h3>
 			<div className="pageSeven__first-item">
 				<div className="pageSeven__first-item__content">

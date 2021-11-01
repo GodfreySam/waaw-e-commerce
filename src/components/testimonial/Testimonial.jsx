@@ -4,7 +4,7 @@ import "./style.css";
 
 const Testimonial = () => {
 	return (
-		<div className="testimonial__container">
+		<div className="testimonial__container home">
 			<div className="testimonial__content">
 				<div className="testimonial__gallery">
 					<div className="testimonial__title">Photo Gallery</div>

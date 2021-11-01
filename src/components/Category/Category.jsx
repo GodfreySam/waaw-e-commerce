@@ -10,11 +10,8 @@ import { IconButton } from "@material-ui/core";
 const Category = ({ topCategories }) => {
 		let history = useHistory();
 
-		// const handleClick = () => {
-		// 	history.push("/products");
-		// };
 	return (
-		<div className="categories">
+		<div className="categories home">
 			<div className="categories__header">
 				<h2>Top Categories</h2>
 			</div>

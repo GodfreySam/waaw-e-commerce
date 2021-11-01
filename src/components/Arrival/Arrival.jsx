@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 const Arrival = ({ newArrivals }) => {
 	let history = useHistory();
 	return (
-		<div className="arrivals">
+		<div className="arrivals home">
 			<div className="arrivals__header">
 				<h2>New Arrivals</h2>
 			</div>

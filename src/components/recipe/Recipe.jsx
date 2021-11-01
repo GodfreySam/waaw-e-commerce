@@ -4,7 +4,7 @@ import "./Recipe.css";
 const Recipe = () => {
 	return (
 		<div>
-			<div className="recipe__container">
+			<div className="recipe__container home">
 				<div className="recipe__content">
 					<div className="recipe__card">
 						<div>

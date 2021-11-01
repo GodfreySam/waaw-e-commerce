@@ -4,22 +4,22 @@ import "./auth.css";
 import toast from "react-hot-toast";
 import { useHistory } from "react-router-dom";
 
-const VerifyUser = () => {
-	const token = useRef();
+const ResetPassword = () => {
+	const email = useRef();
 	const history = useHistory();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		if (!token.current.value) return toast.error("Token is required");
-
+		if (!email.current.value) return toast.error("Email address is required");
+	
 		const user = {
-			token: token.current.value,
+			email: email.current.value,
 		};
 
 		try {
-			let res = await axios.post("/api/v1/auth/verify", user);
+			let res = await axios.post("/api/v1/auth/reset", user);
 			if (res.data.success) toast.success(res.data.msg);
-			history.push("/user/login");
+			history.push("/user/reset-password");
 		} catch (err) {
 			if (!err.response.data.success) return toast.error(err.response.data.msg);
 		}
@@ -30,18 +30,20 @@ const VerifyUser = () => {
 			<div className="form-flex">
 				<div className="container-form register-form">
 					<div className="heading">
-						<h1>User Email Veriffication</h1>
+						<h1>User Password Reset</h1>
 					</div>
+					<br />
+					<p>Enter the email to your account</p>
 					<br />
 					<br />
 					<form onSubmit={handleSubmit} className="auth register-form">
-						<label for="token">Verification Token</label>
+						<label for="email">Email</label>
 						<input
-							type="text"
-							name="text"
+							type="email"
+							name="email"
 							id=""
-							placeholder="email verification token"
-							ref={token}
+							placeholder="name@gmail.com"
+							ref={email}
 						/>
 						<input className="form__submit-button" type="submit" value="Submit" />
 					</form>
@@ -51,4 +53,4 @@ const VerifyUser = () => {
 	);
 };
 
-export default VerifyUser;
+export default ResetPassword;

@@ -21,7 +21,7 @@ const loginUser = async (req, res, next) => {
 				.status(400)
 				.json({ success: false, msg: "Username does not exist" });
 
-		if (!findUser.confirmed)
+		if (!findUser.verified)
 			return res
 				.status(401)
 				.json({
