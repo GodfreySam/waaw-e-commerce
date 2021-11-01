@@ -5,9 +5,9 @@
 	display: flex;
 	/* border: 1px solid red; */
 	margin: auto;
-	margin-bottom: 50px;
+	margin-bottom: 70px !important;
 	height: 550px;
-	margin-top: 150px;
+	margin-top: 150px !important;
 	/* height: 100px; */
 	background-color: rgb(245, 245, 245);
 	border-bottom: 10px solid black;
@@ -39,6 +39,11 @@
 
 .cart__image__container {
 	padding: 0 20px;
+}
+
+input.PrivateSwitcchBase-input-10 {
+	border: 1px solid white !important;
+	color: white !important;
 }
 
 .cart__image {

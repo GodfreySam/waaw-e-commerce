@@ -152,11 +152,18 @@ const ShoppingCart = ({
 							/>
 							<div className="payment__card__button">
 								{user ? (
-									<PaystackConsumer {...componentProps} >
-										{({initializePayment}) => <button onClick={() => initializePayment(handleSuccess, handleClose)}>CHECKOUT</button>}
+									<PaystackConsumer {...componentProps}>
+										{({ initializePayment }) => (
+											<button
+												className="checkout__button"
+												onClick={() => initializePayment(handleSuccess, handleClose)}
+											>
+												CHECKOUT
+											</button>
+										)}
 									</PaystackConsumer>
 								) : (
-									<button class="checkout__button" onClick={notify}>
+									<button className="checkout__button" onClick={notify}>
 										CHECKOUT
 									</button>
 								)}
