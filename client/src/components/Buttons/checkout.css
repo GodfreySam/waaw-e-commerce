@@ -1,0 +1,32 @@
+.btn {
+	border: none;
+	font-family: 'Poppins';
+	font-size: inherit;
+	color: inherit;
+	/* background: none; */
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	text-align: center;
+}
+
+.btn-2 {
+	padding: 25px 50px !important;
+    background: #ffd72f !important;
+	color: #333 !important;
+    border-radius: 7px !important;
+    height: 70px !important;
+}
+
+.btn-2:hover {
+	background: #27ae60 !important;
+}
+
+.btn-2:active {
+	background: #27ae60;
+	transform: translateY(5px);
+}
