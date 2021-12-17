@@ -1,0 +1,164 @@
+.navbar {
+	background: #2d2d2d;
+	position: relative;
+	top: -35px;
+   right: 0;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.menu__bars {
+	margin-left: 2rem;
+	font-size: 2rem;
+	background: none;
+}
+
+.nav__menu {
+	background-color: rgb(17, 17, 17) !important;
+	width: 250px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	transition: 850ms;
+	opacity: 0.9;
+	z-index: 9;
+}
+
+.nav__menu a {
+	text-decoration: none;
+}
+
+.nav__menu.active {
+	right: 0;
+	transition: 350ms;
+}
+
+.nav__text {
+	list-style: none;
+	height: 60px;
+	text-transform: uppercase;
+
+}
+
+.sidebar__user_info{
+   margin: 10px;
+}
+
+.navbar__cart .item__bag {
+   color: #fabcbf;
+ margin: 10px;
+}
+
+.nav__menu.nav__text:hover {
+   text-decoration: underline !important;
+	background-color: #8a5a5d !important;
+}
+
+.nav__text a {
+	text-decoration: none;
+	color: #fcf5f5;
+	font-size: 18px;
+	font-weight: bolder;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+
+.nav__menu__items {
+	width: 100%;
+	padding-top: 8rem;
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+}
+
+/* hambuger menu btn */
+@media (max-width: 400px) {
+.menu-btn {
+		right: 2px;
+	}
+}
+
+@media (max-width: 350px) {
+.menu-btn {
+		right: 8px;
+	}
+}
+
+@media (max-width: 330px) {
+.menu-btn {
+		right: 15px;
+	}
+}
+
+@media (max-width: 321px) {
+.menu-btn {
+		right: 20px;
+	}
+}
+
+@media (max-width: 310px) {
+.menu-btn {
+		right: 25px;
+	}
+}
+
+@media (max-width: 300px) {
+.menu-btn {
+		right: 30px;
+	}
+}
+
+.menu-btn {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+@media (min-width: 786px) {
+	.menu-btn {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 785px) {
+	.menu-btn {
+		top: 25px;
+      visibility: visible;
+	}
+}
+
+.menu-btn .btn-line {
+	width: 28px;
+	height: 3px;
+	margin: 0 0 5px 0;
+	background: whitesmoke;
+	transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+	transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+	opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -5px);
+}
+

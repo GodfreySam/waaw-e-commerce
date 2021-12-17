@@ -1,0 +1,449 @@
+.newsletter {
+	font-family: "Poppins", sans-serif;
+	background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/asset2_ee6bsk.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+	margin: 80px auto;
+}
+
+.newsletter-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.newsletter-content > * {
+	flex: 1 1 350px;
+	margin: 25px;
+}
+
+.newsletter-content__left {
+	margin: 0 2rem 0;
+	padding: 0;
+}
+
+.newsletter-content__left-image {
+	height: auto;
+}
+
+.newsletter-content__right {
+	color: white;
+}
+
+.newsletter-content__right-p {
+	font-size: 0.9rem;
+	line-height: 1rem;
+	color: rgb(248, 239, 239) !important;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.newsletter-content__right-header {
+	font-size: 1.5rem;
+	line-height: 1rem;
+	font-weight: 100;
+	margin-top: 5rem;
+}
+
+.newsletter-content__right-form {
+	width: 100%;
+}
+
+.newsletter-content__right-form input {
+	background-color: #fabcbf;
+	padding: 0.7rem 2rem;
+	border-radius: 5px;
+	color: rgb(248, 239, 239) !important;
+	border: 0.5px solid rgb(248, 239, 239) !important;
+	width: 48%;
+}
+
+.newsletter-content__right-form button {
+	background-color: #fa8c91;
+	padding: 0.7rem;
+	border-radius: 5px;
+	color: rgb(248, 239, 239) !important;
+	border: 0.5px solid rgb(248, 239, 239) !important;
+	margin-left: 2rem;
+	width: 25%;
+}
+
+.newsletter-content__right-form input::placeholder {
+	color: rgb(248, 239, 239) !important;
+}
+
+.newsletter-content__app-market {
+	display: inline-block;
+	margin-top: 3rem;
+}
+
+.newsletter-content__app-market .newsletter-content__app-market-button:nth-child(2) {
+	margin-left: 2rem;
+}
+
+.newsletter-content__app-market-button {
+	max-height: 40px;
+	height: 40px;
+	max-width: 130px;
+	width: 130px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.newsletter-content__right-form button:hover {
+	cursor: pointer;
+	background-color: #646161 !important;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.newsletter-content__right-form button:active {
+	transform: translateY(1px) !important;
+}
+
+.newsletter-content__app-market-button:hover {
+	cursor: pointer;
+	background-color: #e2dbdb !important;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.newsletter-content__app-market-button:active {
+	transform: translateY(1px) !important;
+}
+
+.newsletter-content__app-market-button-image {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+@media screen and (max-width: 1260px) {
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/asset2a_sastln.png") !important;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2b_o5scgl.png") !important;
+	}
+
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 490px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 460px;
+	}
+
+	.newsletter-content__app-market {
+		display: inline-block;
+		margin-top: 2rem;
+	}
+
+	.newsletter-content__right-p {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.newsletter-content__right-header {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 440px;
+	}
+
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2d_q1cspa.png") !important;
+	}
+
+	.newsletter-content__right-header {
+		margin-top: -1rem;
+	}
+
+	.newsletter-content__right-p {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2d_q1cspa.png") !important;
+	}
+
+	.newsletter-content__right-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsletter-content__right-form input {
+		width: 75% !important;
+		margin: 0;
+	}
+
+	.newsletter-content__right-form button {
+		margin: 1rem -0.1rem 0;
+		width: 75% !important;
+	}
+
+	.newsletter-content__app-market {
+		display: inline-block;
+		margin-top: 1rem;
+	}
+
+	.newsletter-content__right-p {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.newsletter-content__right-header {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 904px) {
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2d_q1cspa.png") !important;
+	}
+
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 420px;
+	}
+
+	.newsletter-content__right-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsletter-content__right-form input {
+		width: 75% !important;
+		margin: 0;
+	}
+
+	.newsletter-content__right-form button {
+		margin: 1rem -0.1rem 0;
+		width: 75% !important;
+	}
+
+	.newsletter-content__app-market {
+		display: inline-block;
+		margin-top: 1rem;
+	}
+
+	.newsletter-content__right-p {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.newsletter-content__right-header {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 885px) {
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
+		background-size: auto;
+	}
+
+	.newsletter-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.newsletter-content__left {
+		width: 100%;
+		padding: 0;
+		margin: 1rem auto 0;
+	}
+
+	.newsletter-content__left-image {
+		height: auto;
+		margin: -5rem auto 0;
+	}
+
+	.newsletter-content__right {
+		width: 100%;
+		margin: -1rem auto 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.newsletter-content__right-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsletter-content__right-form input {
+		width: 75% !important;
+		margin: 0;
+	}
+
+	.newsletter-content__right-form button {
+		margin: 1rem -0.1rem 0;
+		width: 75% !important;
+	}
+
+	.newsletter-content__right-header,
+	.newsletter-content__right-p,
+	.newsletter-content__app-market {
+		margin-left: -8rem;
+	}
+}
+
+@media screen and (max-width: 883px) {
+	.newsletter {
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2c_mhwzjy.png") !important;
+		background-size: 90%;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.newsletter-content {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.newsletter {
+		font-family: "Poppins", sans-serif;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 90%;
+	}
+
+	.newsletter-content__left {
+		width: 50%;
+	}
+
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 380px;
+	}
+
+	.newsletter-content__right {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.newsletter-content__right-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsletter-content__right-form input {
+		width: 80% !important;
+	}
+
+	.newsletter-content__right-form button {
+		width: 80% !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.newsletter-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsletter {
+		font-family: "Poppins", sans-serif;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 90%;
+	}
+
+	.newsletter-content__left {
+		width: 100%;
+		margin-top: 5rem;
+	}
+
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 230px;
+	}
+
+	.newsletter-content__right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: -20rem 0 0;
+	}
+
+	.newsletter-content__right-form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.newsletter-content__right-form input {
+		width: 300px !important;
+		margin: 0 auto 0;
+	}
+
+	.newsletter-content__right-form button {
+		width: 300px !important;
+		margin: 1rem auto 0;
+	}
+
+	.newsletter-content__app-market {
+		display: inline-block;
+		margin: 1rem auto 0;
+	}
+
+	.newsletter-content__right-p {
+		padding-bottom: 1rem;
+		margin: 0 auto 0;
+	}
+
+	.newsletter-content__right-header {
+		margin: -2rem auto 0;
+	}
+}
+
+@media screen and (max-width: 662px) {
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 200px;
+	}
+
+	.newsletter {
+		font-family: "Poppins", sans-serif;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+	}
+}
+
+@media screen and (max-width: 555px) {
+	.newsletter-content__left-image {
+		height: auto;
+		max-width: 180px;
+	}
+
+	.newsletter {
+		font-family: "Poppins", sans-serif;
+		background-image: url("https://res.cloudinary.com/freyman/image/upload/v1635417546/grp1-ecom/images/asset2e_qddkgn.png") !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+	}
+}
