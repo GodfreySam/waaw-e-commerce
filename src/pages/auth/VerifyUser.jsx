@@ -19,7 +19,10 @@ const VerifyUser = () => {
 		};
 
 		try {
-			let res = await axios.post("/api/v1/auth/verify", user);
+			let res = await axios.post(
+				"https://frooto-api.herokuapp.com/api/v1/auth/verify",
+				user,
+			);
 			if (res.data.success) toast.success(res.data.msg);
 			window.location.href = "/user/login";
 		} catch (err) {

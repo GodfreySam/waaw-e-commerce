@@ -27,7 +27,10 @@ const Register = () => {
 		};
 
 		try {
-			let res = await axios.post("/api/v1/auth/register", user);
+			let res = await axios.post(
+				"https://frooto-api.herokuapp.com/api/v1/auth/register",
+				user,
+			);
 			if (res.data.success) toast.success(res.data.msg);
 			window.location.href = "/user/verify";
 		} catch (err) {

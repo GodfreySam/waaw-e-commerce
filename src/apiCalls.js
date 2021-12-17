@@ -3,10 +3,10 @@ import toast from "react-hot-toast";
 
 export const loginCall = async (userCredentials, authDispatch) => {
 	authDispatch({ type: "LOGIN_START" });
-
+	// https://frooto-api.herokuapp.com/
 	try {
 		let res = await axios.post(
-			"/api/v1/auth/login",
+			"https://frooto-api.herokuapp.com/api/v1/auth/login",
 			userCredentials,
 		);
 		if (res.data.success) toast.success(res.data.msg);
