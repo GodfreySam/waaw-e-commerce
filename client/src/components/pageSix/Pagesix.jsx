@@ -24,30 +24,21 @@ const Pagesix = () => {
 					</form>
 
 					<div className="pageSix-content__app-market">
-<<<<<<< HEAD:src/components/pageSix/Pagesix.jsx
-						<button className="pageSix-content__app-market-button">
-=======
 						<button
 							onClick={
 								()=>(window.location.href = "https://itunes.apple.com/")
 							}
 							className="pageSix-content__app-market-button"
 						>
->>>>>>> af3bc3eb093c05de8f82f28f5ffb2632072089f9:client/src/components/pageSix/Pagesix.jsx
 							<img
 								className="pageSix-content__app-market-button"
 								src="https://res.cloudinary.com/freyman/image/upload/v1635417545/grp1-ecom/images/apple-store_gawirt.png"
 								alt="ios store"
 							/>
 						</button>
-<<<<<<< HEAD:src/components/pageSix/Pagesix.jsx
-						<button className="pageSix-content__app-market-button">
-=======
 						<button
-							onClick={()=>(window.location.href = "https://play.google.com/store/apps/")}
 							className="pageSix-content__app-market-button"
 						>
->>>>>>> af3bc3eb093c05de8f82f28f5ffb2632072089f9:client/src/components/pageSix/Pagesix.jsx
 							<img
 								className="pageSix-content__app-market-button"
 								src="https://res.cloudinary.com/freyman/image/upload/v1635417549/grp1-ecom/images/google-store_r3mt4l.png"

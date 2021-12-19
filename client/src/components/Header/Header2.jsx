@@ -147,7 +147,17 @@ const Header2 = ({ cartItems }) => {
 				</div>
 				<Divider />
 				<List className="header__drawer">
-					{["Menu", "Pages", "Gallery", "Blog", "Shop", "Elements"].map(
+					{[<Link to="/" className="link-items">
+								Home
+							</Link>, <Link to="/about" className="link-items">
+								About
+							</Link>, <Link to="/products" className="link-items">
+								Gallery
+							</Link>, <Link to="/blog-post" className="link-items">
+								Blog
+							</Link>, <Link to="/products" className="link-items">
+								Shop
+							</Link>, "Elements"].map(
 						(text, index) => (
 							<ListItem button key={text}>
 								<ListItemIcon>{index % 2 === 0 ? <Inbox /> : <Mail />}</ListItemIcon>
