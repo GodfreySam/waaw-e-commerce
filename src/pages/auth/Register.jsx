@@ -17,31 +17,29 @@ const Register = () => {
   const username = useRef();
   const email = useRef();
   const password = useRef();
-  const confirmPassword = useRef();
 
   const [values, setValues] = useState({
     username: "",
     email: "",
     password: "",
-    showPassword1: false,
-    showPassword2: false,
+    showPassword: false,
   });
 
-  const handleChange = (prop) => (event) => {
-    setValues({ ...values, [prop]: event.target.value });
-  };
+  // const handleChange = (prop) => (event) => {
+  //   setValues({ ...values, [prop]: event.target.value });
+  // };
 
-  const handleClickShowPassword1 = () => {
+  // const handleClickShowPassword1 = () => {
+  //   setValues({
+  //     ...values,
+  //     showPassword1: !values.showPassword1,
+  //   });
+  // };
+
+  const handleClickShowPassword = () => {
     setValues({
       ...values,
-      showPassword1: !values.showPassword1,
-    });
-  };
-
-  const handleClickShowPassword2 = () => {
-    setValues({
-      ...values,
-      showPassword2: !values.showPassword2,
+      showPassword: !values.showPassword,
     });
   };
 
@@ -54,7 +52,6 @@ const Register = () => {
     if (!username.current.value) return toast.error("An input is required");
     if (!email.current.value) return toast.error("An email is required");
     if (!password.current.value) return toast.error("Password is required");
-    if (!confirmPassword.current.value) return toast.error("Please confirm password");
 
     const user = {
       username: username.current.value,
@@ -92,86 +89,23 @@ const Register = () => {
             inputRef={username}
           />
 
-<<<<<<< HEAD
-          <TextField
-            label="Email address"
-            id="filled-start-adornment"
-            sx={{ m: 1, width: "30ch" }}
-            variant="filled"
-            type="email"
-            value={values.email}
-          />
-
           <FormControl sx={{ m: 1, width: "35ch" }} variant="filled">
             <InputLabel htmlFor="filled-adornment-password">
               Password
             </InputLabel>
             <FilledInput
               id="filled-adornment-password"
-              type={values.showPassword1 ? "text" : "password"}
+              type={values.showPassword ? "text" : "password"}
               inputRef={password}
-              onChange={handleChange('password')}
               endAdornment={
                 <InputAdornment position="end">
                   <IconButton
                     aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword1}
+                    onClick={handleClickShowPassword}
                     onMouseDown={handleMouseDownPassword}
                     edge="end"
                   >
-                    {values.showPassword1 ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
-            />
-          </FormControl>
-=======
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-		if (!firstname.current.value) return toast.error("First name is required");
-		if (!lastname.current.value) return toast.error("Last name is required");
-		if (!username.current.value) return toast.error("Username is required");
-		if (!email.current.value) return toast.error("Email address is required");
-		if (!password.current.value) return toast.error("Password is required");
-		const user = {
-			firstname: firstname.current.value,
-			lastname: lastname.current.value,
-			username: username.current.value,
-			email: email.current.value,
-			password: password.current.value,
-		};
-		
-		// https://frooto-api.herokuapp.com/
-		try {
-			let res = await axios.post(
-				"http://localhost:5000/api/v1/auth/register",
-				user,
-			);
-			if (res.data.success) toast.success(res.data.msg);
-			window.location.href = "/user/verify";
-		} catch (err) {
-			if (!err.response.data.success) return toast.error(err.response.data.msg);
-		}
-	};
->>>>>>> 1e899311c1bdcbc302df61ec71ccf7ce554d6dfa
-
-          <FormControl sx={{ m: 1, width: "35ch" }} variant="filled">
-            <InputLabel htmlFor="filled-adornment-password">
-              Confirm Password
-            </InputLabel>
-            <FilledInput
-              id="filled-adornment-password"
-              type={values.showPassword2 ? "text" : "password"}
-              inputRef={confirmPassword}
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword2}
-                    onMouseDown={handleMouseDownPassword}
-                    edge="end"
-                  >
-                    {values.showPassword2 ? <VisibilityOff /> : <Visibility />}
+                    {values.showPassword ? <VisibilityOff /> : <Visibility />}
                   </IconButton>
                 </InputAdornment>
               }
