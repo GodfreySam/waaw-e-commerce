@@ -92,6 +92,7 @@ const Register = () => {
             inputRef={username}
           />
 
+<<<<<<< HEAD
           <TextField
             label="Email address"
             id="filled-start-adornment"
@@ -124,6 +125,35 @@ const Register = () => {
               }
             />
           </FormControl>
+=======
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		if (!firstname.current.value) return toast.error("First name is required");
+		if (!lastname.current.value) return toast.error("Last name is required");
+		if (!username.current.value) return toast.error("Username is required");
+		if (!email.current.value) return toast.error("Email address is required");
+		if (!password.current.value) return toast.error("Password is required");
+		const user = {
+			firstname: firstname.current.value,
+			lastname: lastname.current.value,
+			username: username.current.value,
+			email: email.current.value,
+			password: password.current.value,
+		};
+		
+		// https://frooto-api.herokuapp.com/
+		try {
+			let res = await axios.post(
+				"http://localhost:5000/api/v1/auth/register",
+				user,
+			);
+			if (res.data.success) toast.success(res.data.msg);
+			window.location.href = "/user/verify";
+		} catch (err) {
+			if (!err.response.data.success) return toast.error(err.response.data.msg);
+		}
+	};
+>>>>>>> 1e899311c1bdcbc302df61ec71ccf7ce554d6dfa
 
           <FormControl sx={{ m: 1, width: "35ch" }} variant="filled">
             <InputLabel htmlFor="filled-adornment-password">

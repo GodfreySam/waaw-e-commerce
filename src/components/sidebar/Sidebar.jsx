@@ -77,7 +77,7 @@ const Sidebar = () => {
 						) : (
 							<>
 								<Link to="/user/login" className="link-items">
-									Signin
+									Login
 								</Link>
 							</>
 						)}

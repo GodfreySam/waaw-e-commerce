@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import axios from "axios";
 import "./auth.css";
 import toast from "react-hot-toast";
@@ -8,21 +8,25 @@ const VerifyUser = () => {
 	// const token = useRef();
 	const { reset_token } = useParams();
 	const [resetToken, setResetToken] = useState();
+
+	console.log(resetToken);
 	
+	useEffect(() => {
+		setResetToken(reset_token)
+	}, [reset_token])
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (!resetToken) return toast.error("Token is required");
-		if (!reset_token) return toast.error("Token is required");
-
+	
 		const user = {
-			token: reset_token && resetToken
+			token: resetToken,
 		};
 
+		// https://frooto-api.herokuapp.com/
+		
 		try {
-			let res = await axios.post(
-				"https://frooto-api.herokuapp.com/api/v1/auth/verify",
-				user,
-			);
+			let res = await axios.post("http://localhost:5000/api/v1/auth/verify", user);
 			if (res.data.success) toast.success(res.data.msg);
 			window.location.href = "/user/login";
 		} catch (err) {
@@ -46,7 +50,7 @@ const VerifyUser = () => {
 							name="text"
 							id=""
 							placeholder="email verification token"
-							value={reset_token && resetToken}
+							value={resetToken}
 							onChange={(e) => setResetToken(e.target.value)}
 						/>
 						<input className="form__submit-button" type="submit" value="Submit" />

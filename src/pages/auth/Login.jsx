@@ -18,7 +18,7 @@ const Login = () => {
 	  };
 	const userInput = useRef();
 	const password = useRef();
-	const { authDispatch } = useContext(AuthContext);
+	const { dispatch } = useContext(AuthContext);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -30,7 +30,8 @@ const Login = () => {
 			password: password.current.value,
 		};
 
-		loginCall(user, authDispatch);
+		loginCall(user, dispatch);
+		
 	};
 
 	return (
