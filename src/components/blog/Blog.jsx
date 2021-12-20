@@ -52,7 +52,7 @@ const Blog = () => {
 					<div className="first-item__content-body">
 						Unwind and party like for every weekend, feel and taste the goodness with
 						every sip and be vitalized. Clear the mind, energize the body, feel it,
-						tatse it.
+						taste it.
 					</div>
 				</div>
 			</div>
