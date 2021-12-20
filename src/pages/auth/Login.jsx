@@ -1,18 +1,28 @@
-import React, { useContext, useRef } from "react";
-import { Link } from "react-router-dom";
-import "./auth.css";
-import toast from "react-hot-toast";
+import React, { useContext, useRef, useState } from 'react';
+import './auth.css'
+import { Button,IconButton,FilledInput,InputLabel,InputAdornment,FormControl,TextField, } from '@mui/material';
+import { VisibilityOff,Visibility } from '@mui/icons-material';
+import toast from 'react-hot-toast';
 import { AuthContext } from "../../context/AuthContext";
 import { loginCall } from "../../apiCalls";
 
+
 const Login = () => {
+	const [showPassword, setShowPassword] = useState(false);
+	const handleClickShowPassword = () => {
+		setShowPassword(!showPassword);
+	  };
+	
+	  const handleMouseDownPassword = (event) => {
+		event.preventDefault();
+	  };
 	const userInput = useRef();
 	const password = useRef();
 	const { dispatch } = useContext(AuthContext);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		if (!userInput.current.value) return toast.error("Username or Email is required");
+		if (!userInput.current.value) return toast.error("An input is required");
 		if (!password.current.value) return toast.error("Password is required");
 
 		const user = {
@@ -26,47 +36,47 @@ const Login = () => {
 
 	return (
 		<div className="register">
-			<div className="form-flex">
-				<div className="container-form login-form">
-					<div className="heading">
-						<h1>User Signin</h1>
-					</div>
-					<form onSubmit={handleSubmit} className="login auth">
-						<label for="user-input">Email or Username</label>
-						<input
-							type="text"
-							name="user-input"
-							id="user-input"
-							placeholder="Email or Username"
-							ref={userInput}
-						/>
-						<label for="password">Password</label>
-						<input
-							type="password"
-							name="password"
-							id="password"
-							placeholder="Password6+ characters"
-							ref={password}
-						/>
-						<input className="form__submit-button" type="submit" value="Login" />
-					</form>
-					<div className="register__para_link">
-						<p>
-							Forgot password?
-							<Link className="register__anchor" to="/user/reset">
-								Reset Password
-							</Link>
-						</p>
-						<p>
-							Don't have an account?
-							<Link className="register__anchor" to="/user/register">
-								Signup
-							</Link>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div className="holder">
+		  <h3>Register Here</h3>
+        <form onSubmit={handleSubmit} className="register__form" noValidate autoComplete="off">
+          <TextField
+            label="Email or Username"
+            id="filled-start-adornment"
+            sx={{ m: 1, width: '35ch' }}
+            variant="filled"
+            type='text'
+            inputRef={userInput}
+          />
+
+          <FormControl sx={{ m: 1, width: '35ch' }} variant="filled">
+            <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
+            <FilledInput
+              id="filled-adornment-password"
+              type={showPassword ? 'text' : 'password'}
+              inputRef={password}
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton
+                    aria-label="toggle password visibility"
+                    onClick={handleClickShowPassword}
+                    onMouseDown={handleMouseDownPassword}
+                    edge="end"
+                  >
+                    {showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+
+          <div className="btn">
+			<Button type='submit' variant='contained' className='register__btn'>
+				Register
+			</Button>
+		  </div>
+        </form>
+      </div>
+    </div>
 	);
 };
 
