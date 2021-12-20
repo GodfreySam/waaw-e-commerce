@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Header2 from "./components/Header/Header2";
 import Header1 from "./components/Header/Header1";
@@ -16,29 +16,50 @@ import VerifyUser from "./pages/auth/VerifyUser";
 import Footer from "./components/footer/Footer";
 import MainFooter from "./components/footer/MainFooter";
 import CartContext from "./context/CartContext";
-
+import { AuthContext } from "./context/AuthContext";
 
 const App = () => {
+	const [loggedInUser, setLoggedInUser] = useState();
+	const { user } = useContext(AuthContext);
+
 	return (
 		<CartContext>
 			<div className="constrainWidth">
 				<Router>
 					<Header1 />
 					<Header2 />
-					<Routes>
-						<Route path="/" element={<Home />}></Route>
-						<Route path="/cart" element={<Cart />} />
-						<Route path="/products" element={<Products />}></Route>
-						<Route path="/product-details/:id" element={<Product />}></Route>
-						<Route path="/user/login" element={<Login />}></Route>
-						<Route path="/user/verify" element={<VerifyUser />}></Route>
-						<Route path="/user/register" element={<Register />}></Route>
-						<Route path="/user/reset" element={<ResetPassword />}></Route>
-						<Route
-							path="/user/reset-password"
-							element={<EffectResetPassword />}
-						></Route>
-					</Routes>
+					<Switch>
+						<Route exact path="/">
+							<Home />
+						</Route>
+						<Route path="/home/:userId">
+							<Home />
+						</Route>
+						<Route path="/cart">
+							<Cart />
+						</Route>
+						<Route path="/products">
+							<Products />
+						</Route>
+						<Route path="/product-details/:id">
+							<Product />
+						</Route>
+						<Route path="/user/login">
+							<Login />
+						</Route>
+						<Route path="/user/verify">
+							<VerifyUser />
+						</Route>
+						<Route path="/user/register">
+							<Register />
+						</Route>
+						<Route path="/user/reset">
+							<ResetPassword />
+						</Route>
+						<Route path="/user/reset-password">
+							<EffectResetPassword />
+						</Route>
+					</Switch>
 					<Footer />
 					<MainFooter />
 				</Router>

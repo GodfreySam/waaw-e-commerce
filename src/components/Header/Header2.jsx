@@ -56,7 +56,7 @@ const Header2 = ({ cartItems }) => {
 							) : (
 								<>
 									<Link to="/user/login" className="link-items">
-										Signin
+										Login
 									</Link>
 								</>
 							)}
