@@ -85,7 +85,8 @@
 }
 
 .form__submit-button:hover {
-	background-color: #f50410 !important;
+	background-color: #f2f2f2 !important;
+	color: rgb(139, 112, 103) !important;
 }
 
 .form__submit-button a:active {

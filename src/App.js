@@ -29,7 +29,7 @@ const App = () => {
 					<Header2 />
 					<Switch>
 						<Route exact path="/">
-							<Home />
+							{user ? <Redirect to="/home" /> : <Home />}
 						</Route>
 						<Route path="/home/:userId">
 							<Home />
