@@ -1,9 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import './auth.css'
-import axios from 'axios'
 import { Button,IconButton,FilledInput,InputLabel,InputAdornment,FormControl,TextField, } from '@mui/material';
 import { VisibilityOff,Visibility } from '@mui/icons-material';
-import { useHistory } from 'react-router';
 import toast from 'react-hot-toast';
 import { AuthContext } from "../../context/AuthContext";
 import { loginCall } from "../../apiCalls";
@@ -20,12 +18,7 @@ const Login = () => {
 	  };
 	const userInput = useRef();
 	const password = useRef();
-<<<<<<< HEAD:client/src/components/auth/Login.jsx
-	const history = useHistory();
-	const { isFetching, dispatch } = useContext(AuthContext);
-=======
 	const { authDispatch } = useContext(AuthContext);
->>>>>>> 918f0c0896fb2bcabbbb530b97ed3f58eae743d6:src/pages/auth/Login.jsx
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -37,12 +30,7 @@ const Login = () => {
 			password: password.current.value,
 		};
 
-<<<<<<< HEAD:client/src/components/auth/Login.jsx
-		await loginCall(user, dispatch);
-		history.push('/');
-=======
 		loginCall(user, authDispatch);
->>>>>>> 918f0c0896fb2bcabbbb530b97ed3f58eae743d6:src/pages/auth/Login.jsx
 	};
 
 	return (

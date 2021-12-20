@@ -37,12 +37,8 @@ const Newsletter = () => {
 							/>
 						</button>
 						<button
-<<<<<<< HEAD:client/src/components/pageSix/Pagesix.jsx
-							className="pageSix-content__app-market-button"
-=======
 							onClick={()=>(window.location.href = "https://play.google.com/store/apps/")}
 							className="newsletter-content__app-market-button"
->>>>>>> 918f0c0896fb2bcabbbb530b97ed3f58eae743d6:src/components/newsletter/Newsletter.jsx
 						>
 							<img
 								className="newsletter-content__app-market-button"
