@@ -17,7 +17,10 @@ const ResetPassword = () => {
 		// https://frooto-api.herokuapp.com/
 
 		try {
-			let res = await axios.post("http://localhost:5000/api/v1/auth/reset", user);
+			let res = await axios.post(
+				"https://frooto-api.herokuapp.com/api/v1/auth/reset",
+				user,
+			);
 			if (res.data.success) toast.success(res.data.msg);
 			window.location.href = "/user/reset-password";
 		} catch (err) {

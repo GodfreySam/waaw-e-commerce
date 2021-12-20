@@ -29,7 +29,7 @@ const Register = () => {
 		// https://frooto-api.herokuapp.com/
 		try {
 			let res = await axios.post(
-				"http://localhost:5000/api/v1/auth/register",
+				"https://frooto-api.herokuapp.com/api/v1/auth/register",
 				user,
 			);
 			if (res.data.success) toast.success(res.data.msg);
