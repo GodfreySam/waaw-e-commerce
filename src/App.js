@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext} from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
@@ -19,7 +19,6 @@ import CartContext from "./context/CartContext";
 import { AuthContext } from "./context/AuthContext";
 
 const App = () => {
-	const [loggedInUser, setLoggedInUser] = useState();
 	const { user } = useContext(AuthContext);
 
 	return (
