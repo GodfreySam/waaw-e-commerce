@@ -16,7 +16,7 @@ const welcomeEmail = async (req, firstname, email, secretToken) => {
        click on the link below to activate your account.
        <br/>
        <br/>
-       Verification Link: http://${req.headers.host}/user/verify/:${secretToken}
+       Verification Link: https://frooto-shop.netlify.app/user/verify/:${secretToken}
       <br/>
       <br/>
          Happy shopping !!!!!
@@ -30,7 +30,7 @@ const welcomeEmail = async (req, firstname, email, secretToken) => {
    `;
 
    await sendEmail(
-      'support@frootochat.com',
+      'support@frooto.com',
       email,
       'Welcome to Frooto',
       html

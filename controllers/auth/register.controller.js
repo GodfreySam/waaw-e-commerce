@@ -3,7 +3,7 @@ const bcryptjs = require("bcryptjs");
 const welcomeEmail = require("../../utils/welcomeEmail");
 const randomstring = require("randomstring");
 
-const createNewUser = async (req, res, next) => {
+const creatNewUser = async (req, res, next) => {
 	try {
 		let { firstname, lastname, email, username, password } = req.body;
 		if (!firstname || !lastname || !email || !username || !password)
@@ -22,7 +22,7 @@ const createNewUser = async (req, res, next) => {
 		if (user_name)
 			return res
 				.status(400)
-				.json({ success: false, msg: "User name already exists" });
+				.json({ success: false, msg: "Username already exists" });
 
 		const user_email = await User.findOne({ email });
 		if (user_email)
@@ -35,36 +35,25 @@ const createNewUser = async (req, res, next) => {
 		const newUser = new User({
 			firstname,
 			lastname,
-			username: newUsername,
 			email,
+			username: newUsername,
 			password: hashedPassword,
 			secretToken,
 		});
 
 		await newUser.save();
-		if (!newUser)
-			return res
-				.status(500)
-				.json({ success: false, msg: "An error has occurred" });
+		if (!newUser) return res.status(500).json({ msg: "An error has occurred" });
 
-		await welcomeEmail(
-			req,
-			newUser.firstname,
-			newUser.email,
-			newUser.secretToken,
-		);
+		await welcomeEmail(req, newUser.username, newUser.email, newUser.secretToken);
 
 		res.status(201).json({
 			success: true,
-			msg: "Registration successful, user verification token sent to your email",
-			user: {
-				...newUser._doc,
-				password: "",
-			},
+			msg: "User registration successful",
+			user: newUser,
 		});
 	} catch (err) {
 		return res.status(500).json({ msg: err.message });
 	}
 };
 
-module.exports = createNewUser;
+module.exports = creatNewUser;

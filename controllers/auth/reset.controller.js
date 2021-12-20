@@ -15,7 +15,7 @@ const resetPassword = async (req, res, next) => {
 
 		user.secretToken = token;
 		await	user.save();
-		await resetPasswordEmail(req, user.firstname, user.email, user.secretToken);
+		await resetPasswordEmail(req, user.username, user.email, user.secretToken);
 		res.status(201).json({
 			success: true,
 			msg: "Please check your email for the reset token.",

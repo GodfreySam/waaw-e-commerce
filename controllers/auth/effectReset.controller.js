@@ -15,6 +15,7 @@ const passwordReset = async (req, res, next) => {
 				.json({ success: false, msg: "Please enter the valid token" });
 
 		let user = await User.findOne({ secretToken: token });
+		// console.log(user);
 		if (!user)
 			return res.status(400).json({
 				success: false,
@@ -25,11 +26,13 @@ const passwordReset = async (req, res, next) => {
 		const newHashedPassword = await bcryptjs.hash(password, salt);
 
 		user.password = newHashedPassword;
+		// console.log(user.password);
 		await user.save();
 		res.status(201).json({
 			success: true,
 			msg: "Password reset successfully, you may now login",
 		});
+		
 	} catch (err) {
 		return res.status(500).json({ msg: err.message });
 	}

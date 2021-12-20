@@ -22,7 +22,7 @@ const resetPasswordEmail = async (req, firstname, email, secretToken) => {
       contact: support@frootomail.com
    `;
 
-	await sendEmail("support@frootochat.com", email, "Welcome to Frooto", html);
+	await sendEmail("support@frooto.com", email, "Welcome to Frooto", html);
 };
 
 module.exports = resetPasswordEmail;
