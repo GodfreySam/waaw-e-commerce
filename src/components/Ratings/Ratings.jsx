@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 });
 
 const Ratings = () => {
-  const [value, setValue] = useState(2);
+  const [value, setValue] = useState(4.5);
   const [hover, setHover] = useState(-1);
   const classes = useStyles();
 
