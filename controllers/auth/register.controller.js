@@ -5,12 +5,16 @@ const randomstring = require("randomstring");
 
 const creatNewUser = async (req, res, next) => {
 	try {
-		let { firstname, lastname, email, username, password } = req.body;
+		let { firstname, lastname, email, username, password, confirmPassword } = req.body;
 		if (!firstname || !lastname || !email || !username || !password)
 			return res
 				.status(400)
 				.json({ success: false, msg: "All fields are required" });
 
+		if (password !== confirmPassword) return res
+			.status(400)
+			.json({ success: false, msg: "Make sure you match up the passwords" });
+		
 		let newUsername = username.toLowerCase().replace(/ /g, "");
 
 		if (password.length < 6)
