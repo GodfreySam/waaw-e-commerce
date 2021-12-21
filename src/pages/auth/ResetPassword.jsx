@@ -24,7 +24,8 @@ const ResetPassword = () => {
 			if (res.data.success) toast.success(res.data.msg);
 			window.location.href = "/user/reset-password";
 		} catch (err) {
-			if (!err.response.data.success) return toast.error(err.response.data.msg);
+			const errData = err.response && err.response.data.msg ? err.response.data.msg : err.msg;
+  			return toast.error(errData);
 		}
 	};
 

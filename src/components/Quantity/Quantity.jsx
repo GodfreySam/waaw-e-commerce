@@ -43,6 +43,7 @@ const Quantity = ({ item }) => {
 				<Select
 					labelId="demo-controlled-open-select-label"
 					id="demo-controlled-open-select"
+					variant="filled"
 					value={quantity}
 					onChange={handleChange}
 				>

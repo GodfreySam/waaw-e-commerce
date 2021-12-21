@@ -37,7 +37,7 @@ const Login = () => {
 	return (
 		<div className="register">
       <div className="holder">
-		  <h3>Register Here</h3>
+		  <h3>Login Here</h3>
         <form onSubmit={handleSubmit} className="register__form" noValidate autoComplete="off">
           <TextField
             label="Email or Username"
@@ -71,7 +71,7 @@ const Login = () => {
 
           <div className="btn">
 			<Button type='submit' variant='contained' className='register__btn'>
-				Register
+				Login
 			</Button>
 		  </div>
         </form>
