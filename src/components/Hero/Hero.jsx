@@ -1,47 +1,50 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./hero.css";
-
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    // slidesToScroll: 1,
-}
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
-  const p1 =
-    "https://res.cloudinary.com/freyman/image/upload/v1635417552/grp1-ecom/images/hero_ytxosf.jpg";
-  const p2 =
-    "https://res.cloudinary.com/weena/image/upload/v1635766676/cea85f86b13c707f74284737577dc8d8_pztldb.jpg";
-
-  return (
-    <div className="hero_section">
-      <Slider {...settings} className="project">
-        <div className="project__slider">
-          <img src={p1} alt="" className="project__img"/>
-        </div>
-        <div className="project__slider">
-          <img src={p2} alt="" className="project__img"/>
-        </div>
-      </Slider>
-      <div className="hero_section--content">
-				<h1 className="hero_section--title">Fresh Fruits Juice</h1>
-				<p className="hero_section--text">
+	return (
+		<div className="hero__container">
+			<div className="hero__info">
+				<h1 className="hero__title">Fresh Fruits Juice</h1>
+				<p className="hero__desc">
 					Our Organic juice contain all necessary elements and vitamins for health
 				</p>
-				<input
-					type="button"
-					value="SHOP NOW"
-					className="hero_section--button"
+				<button
+					className="hero__button"
 					onClick={() => (window.location.href = "#shop__items")}
-				/>
+				>
+					SHOP NOW
+				</button>
 			</div>
-    </div>
-  );
+			<div className="hero__img--container">
+				<Carousel showArrows={false} autoPlay={true} interval={5000} infiniteLoop={true} showThumbs={false} showIndicators={false}>
+					<div className="slider__image__holder">
+						<img
+							className="hero__img"
+							src="https://res.cloudinary.com/freyman/image/upload/v1639256833/grp1-ecom/images/hero-fore_naesfh.png"
+							alt="slider image1"
+						/>
+					</div>
+					<div className="slider__image__holder">
+						<img
+							className="hero__img"
+							src="https://res.cloudinary.com/freyman/image/upload/v1640196339/grp1-ecom/images/hero-fore1_fdrzyw.jpg"
+							alt="slider image2"
+						/>
+					</div>
+					<div className="slider__image__holder">
+						<img
+							className="hero__img"
+							src="https://res.cloudinary.com/freyman/image/upload/v1640198044/grp1-ecom/images/hero-fore2_walapj.png"
+							alt="slider image3"
+						/>
+					</div>
+				</Carousel>
+			</div>
+		</div>
+	);
 };
 
 export default Hero;

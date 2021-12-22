@@ -12,7 +12,7 @@ import { CartState } from "../../context/CartContext";
 const Header2 = ({ cartItems }) => {
 	const { user } = useContext(AuthContext);
 	const {
-		state: { cart }
+		state: { cart },
 	} = CartState();
 
 	const logout = () => {
@@ -56,7 +56,7 @@ const Header2 = ({ cartItems }) => {
 							) : (
 								<>
 									<Link to="/user/login" className="link-items">
-										Login
+										Signin
 									</Link>
 								</>
 							)}
